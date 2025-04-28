@@ -1,0 +1,15 @@
+ada 3 list pada html
+1. unordered list
+2. ordered list
+3. description list
+
+unordered list -> daftar yang tidak memperhatikan urutan
+bisa ditandai dengan bulatan kecil yang menandakan suatu item pada list tersebut
+
+ordered list -> daftar yang memperhatikan urutan
+kita tidak bisa melompati bagiannya, harus sequence atau berurutan
+ditandai dengan huruf atau angka seperti 1,2,3, dst. atau a,b,c,dst.
+
+description list -> daftar yang memberikan penjelasan setelah item dituliskan
+jadi nama item lalu dibawahnya akan ada penjelasan dari item tersebut
+isinya sesuai kebutuhan dari user yang membuat daftar
