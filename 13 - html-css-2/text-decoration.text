@@ -1,0 +1,50 @@
+    <!--  
+      text-align adalah property CSS yang digunakan untuk mengatur perataan teks
+      pada elemen HTML. Nilai yang dapat digunakan adalah left, right, center, justify
+      left: teks diratakan ke kiri
+      right: teks diratakan ke kanan
+      center: teks diratakan ke tengah
+      justify: teks diratakan ke kedua sisi
+
+      text-align-last adalah property CSS yang digunakan untuk mengatur perataan teks
+      pada elemen HTML. Nilai yang dapat digunakan adalah auto, start, end, left, right, center, justify
+
+      text-decoration adalah property CSS yang digunakan untuk mengatur dekorasi teks
+      bisa terdiri dari text-decoration-line, text-decoration-color, text-decoration-style
+      text-decoration-line: adalah property CSS yang digunakan untuk mengatur garis pada teks
+      Nilai yang dapat digunakan adalah none, underline, overline, line-through
+      none: tidak ada garis
+      underline: garis bawah
+      overline: garis atas
+      line-through: garis tengah
+
+      text-decoration-color: adalah property CSS yang digunakan untuk mengatur warna garis pada teks
+      Nilai yang dapat digunakan adalah color name, hex code, rgb, rgba, hsl, hsla
+      color name: nama warna
+      hex code: kode warna hex
+      rgb: kode warna rgb
+      rgba: kode warna rgb dengan alpha
+      hsl: kode warna hsl
+      hsla: kode warna hsl dengan alpha
+      
+      text-decoration-style: adalah property CSS yang digunakan untuk mengatur gaya garis pada teks
+      Nilai yang dapat digunakan adalah solid, double, dotted, dashed, wavy
+      solid: garis lurus
+      double: garis ganda
+      dotted: garis putus-putus
+      dashed: garis putus-putus
+      wavy: garis bergelombang
+      text-decoration-thickness: adalah property CSS yang digunakan untuk mengatur ketebalan garis pada teks
+      Nilai yang dapat digunakan adalah auto, length
+      auto: ketebalan garis otomatis
+      length: ketebalan garis sesuai dengan panjang yang ditentukan
+      
+      text-decoration-skip-ink: adalah property CSS yang digunakan untuk mengatur garis pada teks
+      Nilai yang dapat digunakan adalah auto, none, all, objects, spaces
+      auto: garis otomatis
+      none: tidak ada garis
+      all: semua garis
+      objects: garis pada objek
+      spaces: garis pada spasi
+      
+    -->
