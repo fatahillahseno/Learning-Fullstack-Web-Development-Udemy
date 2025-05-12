@@ -1,0 +1,23 @@
+<!--  
+      text-transform adalah property untuk mengubah huruf menjadi uppercase, lowercase, capitalize
+      text-transform:uppercase = huruf besar semua
+      text-transform:lowercase = huruf kecil semua
+      text-transform:capitalize = huruf pertama dari setiap kata menjadi huruf besar
+      text-transform: none = tidak ada perubahan
+
+      text-indent adalah property untuk mengatur indentasi dari teks
+      text-indent: 50px = mengatur indentasi teks menjadi 50px ke kanan dari posisi semula
+
+      letter-spacing adalah property untuk mengatur jarak antar huruf
+      letter-spacing: 10px = mengatur jarak antar huruf menjadi 10px ke kanan dari posisi semula
+      letter-spacing: -2px = mengatur jarak antar huruf menjadi 2px ke kiri dari posisi semula
+
+      line-height adalah property untuk mengatur tinggi dari baris teks
+      line-height: 1.5 = mengatur tinggi baris teks menjadi 1.5 kali dari ukuran font
+      misalkan ukuran font 12px, maka tinggi baris teks menjadi 1.5 * 12px = 18px
+
+      word-spacing adalah property untuk mengatur jarak antar kata
+      word-spacing: 10px = mengatur jarak antar kata menjadi 10px ke kanan dari posisi semula
+      word-spacing: -2px = mengatur jarak antar kata menjadi 2px ke kiri dari posisi semula
+      
+    -->
