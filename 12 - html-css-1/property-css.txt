@@ -1,0 +1,32 @@
+<!-- 
+    pixel is a measurement in css 
+    border must have 3 values, such as
+    1. border-width
+    2. border-style
+    3. border-color
+    
+    border-width is the thickness of the border
+    you can use px, em, rem, etc.
+    you can set the border-width to 0px, 1px, 2px, etc.
+    you can set the border-width to thin, medium, thick
+    you can set the border-width to auto, inherit, initial, unset
+
+    border-style is the type of border
+    kind of border, there are 3 types of border
+    1. solid
+    2. dotted
+    3. dashed
+
+    border-color is the color of the border
+    
+    you can use color names, hex, rgb, rgba, hsl, hsla
+    you can use color names, such as red, green, blue, etc.
+    
+    you can use hex, such as #ff0000, #00ff00, #0000ff, etc.
+    
+    you can use rgb, such as rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255), etc.
+    you can use rgba, such as rgba(255, 0, 0, 0.5), rgba(0, 255, 0, 0.5), rgba(0, 0, 255, 0.5), etc.
+    
+    you can use hsl, such as hsl(0, 100%, 50%), hsl(120, 100%, 50%), hsl(240, 100%, 50%), etc.
+    you can use hsla, such as hsla(0, 100%, 50%, 0.5), hsla(120, 100%, 50%, 0.5), hsla(240, 100%, 50%, 0.5), etc.
+-->
