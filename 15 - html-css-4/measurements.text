@@ -1,0 +1,62 @@
+Ada 4 unit satuan untuk pengunaan di CSS
+diantaranya:
+1. Absolute Units
+satuan yang tidak bergantung pada ukuran elemen lain
+satuan ini bersifat tetap
+
+Contoh: px, in, cm, mm, pt, pc
+Pixel adalah satuan terkecil dan pengukuran tampilan digital yang mewakili satu cahaya. Pada CSS pixel digunakan untuk menetapkan dimensi tetap yang tidak terpengaruh oleh ukuran layar atau perubahan resolusi
+
+penggunaan satuan ini tidak disarankan
+karena tidak bisa beradaptasi di berbagai device
+mengakibatkan tampilan tidak konsisten
+sehinga menjadi tidak responsif
+ukuran yang tetap membuat isi dari konten sulit untuk dibaca pada layar yang lebih kecil atau lebih besar
+karena ukuran yang tetap akan susah ketika berhadapan dengan skalabilitas 
+
+2. Relative Units
+satuan yang bergantung pada ukuran elemen lain
+satuan ini bersifat dinamis
+Contoh: em, rem, ex, ch, vw, vh, vmin, vmax
+
+REM
+rem berdasarkan dari ukuran font pada elemen akar atau elemen asal yang dimnana root pada rem ialah HTML. Jika tidak ukuran font yang ditetapkan di HTML, maka akan berpindah ke BODY
+penggambaran:
+jika font size pada HTML ditetapkan 16px, jika kita menetapkan elemen yang sedang dibuat sebesar 2rem, maka ukuran font size-nya akan sebesar 32px
+jadi jika kita ingin menganti keseluruhan ukuran font pada elemen-elemen yang kita telah buat
+kita hanya perlu mengganti ukuran font pada elemen rootnya saja (HTML atau Body)
+
+EM
+em berdasarkan ukuran font element parent nya
+penggambaran:
+jika ketika membuat suatu elemen sebagai parent semisal div dengan font size sebesar 20px
+lalu kita membuat elemen p dengan font size 1.5em, maka ukuran font size elemen p sebesar (20px * 1.5em = 30px), kenapa tidak mengkalikan dengan 16px yang ditetapkan sebagai font size root element, karena em berdasarkan font size parentnya.
+
+Viewport Height (VH)
+vh mencakup daerah yang dilihat di suatu browser pada ukuran tinggi(height)/ dari atas ke bawah.
+
+Viewport Width (VW)
+vw mencakup daerah yang dilihat di suatu browser pada ukuran lebar(width)/ dari kiri ke kanan.
+
+penggunaan satuan ini disarankan
+karena responsif
+Contoh:
+font-size: 2em; /* ukuran font 2 kali dari ukuran font elemen parent */
+font-size: 2rem; /* ukuran font 2 kali dari ukuran font elemen root */
+
+
+3. Time Units
+satuan yang digunakan untuk waktu
+Contoh: s, ms
+penggunaan satuan ini digunakan untuk animasi
+Contoh:
+transition: all 0.5s ease-in-out; /* semua perubahan akan terjadi dalam waktu 0.5 detik */
+animation: slide 2s ease-in-out; /* animasi slide akan terjadi dalam waktu 2 detik */
+
+4. Angle Units 
+satuan yang digunakan untuk sudut
+Contoh: deg, rad, grad, turn
+penggunaan satuan ini digunakan untuk transformasi
+Contoh:
+transform: rotate(45deg); /* elemen akan diputar 45 derajat */
+
