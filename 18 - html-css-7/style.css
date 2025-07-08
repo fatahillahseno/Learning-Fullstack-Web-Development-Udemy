@@ -1,0 +1,53 @@
+p{
+  font-size: 20px;
+}
+
+#red-para{
+  color: red;
+}
+
+.blue-bg{
+  background-color: skyblue;
+}
+
+.yellow-bg{
+  background-color: yellow;
+}
+
+.red-text{
+  color: red;
+}
+
+* {
+  text-align: center;
+  color: blue;
+}
+
+/* merubah warna elemen p dengan mungganakan sibling element selector */
+/* 
+  caranya tulis sibling element selector dari element yang ingin diubah
+  
+  contoh: h2 + p {
+    color: green;
+  }
+  ini akan mengubah warna teks dari elemen p yang berada setelah elemen h2
+  namun ini hanya mengubah elemen p yang langsung setelah h2
+  jika ada elemen lain setelah elemen p, maka tidak akan terpengaruh
+  semisal ada elemen p lagi, maka elemen p tersebut tidak akan terpengaruh
+*/
+h2 + p {
+  color: green;
+}
+
+/*  
+  untuk mengubah warna elemen p setelah elemen p yang pertama
+  kita bisa menggunakan sibling element dengan menambahkan tanda ~
+  
+  contoh: h2 ~ p {
+    color: red;
+  }
+  maka semua sibling p setelah h2 akan berubah warna menjadi red
+*/
+h2 ~ p {
+  color: red;
+}

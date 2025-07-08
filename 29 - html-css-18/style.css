@@ -1,0 +1,41 @@
+body{
+  background-color: lightyellow;
+}
+
+.box-model{
+  text-align: center;
+  width: 300px;
+  background-color:lightblue;
+  padding: 20px;
+  border: 5px solid black;  
+  margin: 30px;
+}
+
+.different-properties{
+  text-align: center;
+  width: 300px; 
+  background-color: lightblue;
+  padding-left: 20px;
+  padding-right:40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-left: 10px solid red;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  margin: auto;;
+}
+
+.shorthand{
+  text-align: center;
+  width: 300px; 
+  background-color: lightblue;
+  /* urutan shorthand Top, Right, Bottom, Left */
+  /* TRouBLe */
+  padding:  40px 40px 40px 20px;
+  border-width: 5px 1em 1rem 20px;
+  border-style: solid dashed dotted double;
+  border-color: red green blue black;
+  margin: 20px 50px; /* TB LR */
+}
+

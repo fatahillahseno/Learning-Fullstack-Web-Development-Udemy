@@ -1,0 +1,20 @@
+    atribut selector adalah selector yang digunakan untuk memilih elemen berdasarkan atribut tertentu yang dimilikinya. Ini memungkinkan kita untuk menerapkan gaya CSS pada elemen-elemen yang memiliki atribut tertentu, tanpa perlu menambahkan kelas atau ID tambahan.
+    
+    Ada beberapa jenis atribut selector yang umum digunakan:
+    1. [attribute]: Memilih elemen yang memiliki atribut tertentu, tanpa memperhatikan nilainya.
+    2. [attribute=value]: Memilih elemen yang memiliki atribut dengan nilai tertentu.
+    3. [attribute~=value]: Memilih elemen yang memiliki atribut dengan nilai yang merupakan daftar kata, dan salah satu kata tersebut cocok dengan nilai yang diberikan.
+    4. [attribute|=value]: Memilih elemen yang memiliki atribut dengan nilai yang dimulai dengan nilai tertentu, diikuti oleh tanda hubung (-).
+    5. [attribute^=value]: Memilih elemen yang memiliki atribut dengan nilai yang dimulai dengan nilai tertentu.
+    6. [attribute$=value]: Memilih elemen yang memiliki atribut dengan nilai yang diakhiri dengan nilai tertentu.
+    7. [attribute*=value]: Memilih elemen yang memiliki atribut dengan nilai yang mengandung nilai tertentu di mana saja dalam string.
+    
+    Contoh penggunaan atribut selector:
+    1. [type]: Memilih semua elemen input yang memiliki atribut type.
+    2. [type=text]: Memilih semua elemen input yang memiliki atribut type dengan nilai "text".
+    3. [class~=highlight]: Memilih semua elemen yang memiliki kelas "highlight" di dalam daftar kelasnya.
+    4. [lang|=en]: Memilih semua elemen yang memiliki atribut lang dengan nilai yang dimulai dengan "en" (misalnya, "en-US", "en-GB").
+    5. [href^=https]: Memilih semua tautan yang memiliki atribut href yang dimulai dengan "https".
+    6. [src$=.jpg]: Memilih semua elemen yang memiliki atribut src yang diakhiri dengan ".jpg".
+    7. [href*=example]: Memilih semua tautan yang memiliki atribut href yang mengandung kata "example" di mana saja dalam URL.
+    Dengan atribut selector, kita dapat dengan mudah menerapkan gaya CSS pada elemen-elemen yang memiliki atribut tertentu, membuat kode lebih bersih dan terstruktur.

@@ -1,0 +1,38 @@
+/*  
+  style yang kemungkinan akan selalu sama
+  1. background color       -> warna latar belakang web
+  2. text color             -> warna teks
+  3. accent color           -> warna aksen
+  3. font family            -> jenis huruf
+
+  penamaan untuk variabel CSS
+  yaitu format
+  --nama-variabel: nilai;
+  contoh:
+  --background-color: #f0f0f0;
+*/
+
+/* Deklarasi CSS Variabel untuk pengunaan global */
+:root{
+  --main-bg-color:#ffffff;
+  --main-text-color: #000000;
+  --secondary-text-color: #ffffff;
+  --accent-color: #4caf50;
+}
+
+body{
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: "Arial", sans-serif;
+}
+
+.content p {
+  padding: 20px;
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+.content p:hover {
+  background-color: var(--main-text-color);
+  color: var(--accent-color) ;
+}

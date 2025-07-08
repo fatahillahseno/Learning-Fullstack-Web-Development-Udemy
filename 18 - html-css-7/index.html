@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fullstack Bootcamp</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      .main p{
+        color: blue;
+      }
+      
+      /* div manapun yang memiliki descendant p akan memiliki warna biru */
+      /* penggunaan dengan cara yang lain */
+      /* namun jika seperti di bawah maka berbeda, karena harus langsung sebagai anak dari tag div, jika di dalam tag lain maka p tidak akan menerima atribut dari tag elemen tsb */
+      div > p{
+        font-weight: bold;
+      }
+      
+      /* jika kita ingin memilih sibling yang bukan langsung setelah h2 */
+      /* atau semua sibling p setelah h2 */
+      h2 ~ p {
+        color: red
+      }
+
+      /* jika kita ingin memilih sibling dari tag h2 */
+      h2 + p {
+        color: green
+      }
+
+      /* 
+      adjacent sibling menggunakan tanda (+)
+      dan general sibling menggunakan tanda (~)
+      */
+
+      .highlighted{
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <p >Descendant of the div</p>
+      <div>
+        <span>
+          <p>Another Paragraph</p>
+        </span>
+      </div>
+    </div>
+    <!-- kita bisa menggunakan css dengan memilih sibling -->
+    <h2>H2 Heading</h2>
+    <p>Sibling of H2</p>
+    <p>Not adjacent sibling of H2</p>
+
+    <a class="highlighted" href="https://google.com" target="_blank">Link to Google</a>
+  </body>
+</html>

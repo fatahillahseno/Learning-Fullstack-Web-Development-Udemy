@@ -1,0 +1,30 @@
+ menggunakan inline css sangat tidak disarankan karena tidak terpisah dari struktur html
+  lebih baik menggunakan internal css atau external css
+
+  inline css adalah css yang ditulis langsung di dalam tag html yaitu hanya individual element
+  inline css tidak bisa digunakan untuk banyak element
+  menyebabakan kesulitan dalam maintenance dan readability
+  update dan reuse across multiple pages menjadi sulit
+  pendekatan ini sangat repetitif dan tidak efisien
+  dan mengurangi fleksibilitas dalam mengatur projek yang lebih besar
+  iniline css hanya digunakan untuk keperluan testing
+
+  internal css adalah css yang ditulis di dalam tag <style> di dalam tag <head>
+  internal css bisa digunakan untuk banyak element
+  internal css lebih baik dari pada inline css
+  namun bagaimnana jika ada elemen yang sama yang ingin diganti stylenya
+  seperti dua paragraph dengan style yang berbeda
+  lalu bagaimana jika mengubah style paragraph yang ada di halaman lain
+  maka kita harus menulis css yang sama di halaman lain
+  ini membuat kita harus menulis css yang sama di banyak halaman
+  dan ini sangat tidak efisien
+
+  maka kita akan menggunakan external css
+  external css adalah css yang ditulis di dalam file terpisah
+  dengan ekstensi .css, misal style.css
+  external css bisa digunakan untuk banyak elemen di banyak halaman
+  sehingga kita tidak perlu menulis css berulang-ulang
+
+  maka itu kita akan belajar tentang selector css
+  selector css adalah cara untuk memilih elemen html yang ingin kita ubah tampilannya
+  kita bisa menggunakan selector berdasarkan tag, class, id, atau atribut

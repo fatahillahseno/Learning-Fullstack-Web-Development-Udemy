@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fullstack Bootcamp</title>
+    <style>
+      /* untuk menggunakan pseudo classes mengunakan satu titik dua (:) */
+      /* kalau menggunakan pseudo element menggunakan dua titik dua ( :: )  */
+      .before-example::before{
+        content: "Before: ";
+        color: green
+      }
+
+      .after-example::after{
+        content: " After";
+        color: red; 
+      }
+
+      .first-letter-example::first-letter{
+        font-size: 2em;
+        color: blue;
+      }
+      .first-line-example::first-line{
+        font-weight: bold;
+        text-transform: uppercase;      }
+
+      ul.marker-example li::marker{
+        color: purple;
+        font-size: 1.5rem;
+      }
+
+      ul.marker-example{
+        list-style-type:georgian;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="before-example">Text is inserted before this</p>   
+    <p class="after-example">Text is inserted after this</p>
+    <p class="first-letter-example">This paragraph has larger first letter</p>
+
+    <p class="first-line-example">This paragraph has larger first line more than you know, there is something special about this. <br>Do you know about that?I am not sure that you know that.</p>
+
+    <ul class="marker-example">
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+    </ul>`
+  </body>
+</html>
+
+<!--  
+  pseudo elements adalah elemen yang tidak ada di dalam DOM, tetapi bisa kita buat dengan CSS.
+  pseudo elements bisa kita gunakan untuk menambahkan konten ke dalam elemen yang sudah ada di dalam DOM atau cara tanpa memodifikasi HTML.
+
+  pseudo elements
+  - ::before
+  - ::after
+  - ::first-letter
+  - ::first-line
+  - ::selection
+  - ::placeholder
+  - ::backdrop
+  - ::marker
+  - ::file-selector-button
+  - ::spelling-error
+  - ::grammar-error
+  - ::cue
+  - ::cue-region
+  - ::slotted
+  - ::part
+  - ::view-transition-group
+  - ::view-transition-new
+  - ::view-transition-old
+  pseudo classes adalah elemen yang ada di dalam DOM, tetapi tidak bisa kita buat dengan CSS.
+
+-->

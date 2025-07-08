@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fullstack Bootcamp</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="content">
+    <p>This is a simple paragraph to demonstrate css variable</p>
+    <p class="themed-text">Themed text appears here</p>
+  </div>  
+</body>
+</html>
+
+<!--  
+    css variable adalah sebuah variabel yang dapat digunakan untuk menyimpan nilai CSS yang dapat digunakan kembali di seluruh dokumen.
+    Variabel ini didefinisikan dengan awalan "--" dan dapat digunakan di berbagai tempat dalam CSS.
+    Contoh penggunaan css variable:
+    
+    :root {
+      --main-color: #3498db;
+      --text-color: #333;
+    }
+
+    .themed-text {
+      color: var(--main-color);
+      font-size: 20px;
+    } 
+    
+    Dalam contoh di atas, variabel --main-color dan --text-color didefinisikan di dalam :root, yang berarti mereka dapat digunakan di seluruh dokumen.
+    Variabel ini kemudian digunakan dalam kelas .themed-text untuk mengatur warna teks dan ukuran font.
+    Dengan menggunakan css variable, kita dapat dengan mudah mengubah nilai variabel di satu tempat, dan perubahan tersebut akan diterapkan di seluruh dokumen.
+    Ini membuat pengelolaan gaya CSS menjadi lebih efisien dan mudah dipelihara.
+  -->

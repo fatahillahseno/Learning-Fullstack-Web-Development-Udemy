@@ -1,0 +1,46 @@
+.container{
+  background: lightgrey;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.block-element{
+  display: block; /* inline inline-block block*/
+  background-color: lightblue;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.inline-element{
+  display: inline;
+  background-color: lightcoral;
+  padding: 10px;
+  margin-right: 20px;
+  /* width dan height tidak akan berpengaruh di display inline */
+  width: 2000px;
+  height: 1000px;
+}
+
+.inline-block-element{
+  display: inline-block;
+  background-color: lightcoral;
+  padding: 10px;
+  margin-right: 20px;
+  width: 200px;
+  height: 70px;
+}
+
+.hidden-element{
+  display: none;
+}
+
+.parent-inherit{
+  display: inline-block;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.child-inherit{
+  display: inherit;
+  background-color: lightyellow;
+}

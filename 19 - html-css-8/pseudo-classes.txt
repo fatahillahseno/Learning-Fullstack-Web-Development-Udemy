@@ -1,0 +1,13 @@
+pseudo-classes adalah bagian dari CSS yang digunakan untuk mengubah gaya elemen berdasarkan status atau kondisi tertentu.
+Dalam contoh di atas, kita menggunakan pseudo-classes `:link` dan `:visited` untuk mengubah warna dan dekorasi teks dari tautan yang belum dikunjungi dan yang sudah dikunjungi.
+Pseudo-classes ini memungkinkan kita untuk memberikan pengalaman pengguna yang lebih baik dengan memberikan indikasi visual tentang status tautan.
+
+contoh lainnya adalah `:hover`, yang mengubah gaya elemen saat pengguna mengarahkan kursor ke atasnya, dan `:active`, yang mengubah gaya elemen saat elemen tersebut sedang diaktifkan (misalnya, saat tombol ditekan).
+
+Pseudo-classes sangat berguna dalam membuat antarmuka pengguna yang responsif dan interaktif, serta meningkatkan pengalaman pengguna secara keseluruhan.
+
+Pseudo-classes yang sudah dipelajari
+link
+visited
+hover
+active

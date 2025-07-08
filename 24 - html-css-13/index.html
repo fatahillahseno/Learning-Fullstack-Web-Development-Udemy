@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fullstack Bootcamp</title>
+  <style>
+    .italic{
+      font-style: italic;
+    }
+    .oblique{
+      font-style: oblique;
+    }
+    /* 
+    Perbedaan antara italic dan oblique:
+    - **Italic**: Font yang dirancang khusus untuk gaya italic, biasanya memiliki bentuk huruf yang berbeda. Yang sudah pada font packsnya.
+    - **Oblique**: Font yang dimiringkan, tetapi tidak memiliki bentuk huruf yang berbeda dari versi normalnya. jika ada font yang tidak memiliki italic, maka oblique akan miringkan versi normalnya.
+    */
+
+    /* 
+      Font variant adalah properti CSS yang digunakan untuk mengubah tampilan teks menjadi huruf kecil yang terlihat seperti huruf kapital, tetapi dengan ukuran yang lebih kecil. Ini sering digunakan untuk memberikan efek tipografi yang menarik.
+    */
+
+        .small-caps{
+      font-variant: small-caps;
+    }
+    /*  
+      Small Caps: Huruf kecil yang terlihat seperti huruf kapital, tetapi dengan ukuran yang lebih kecil. Biasanya digunakan untuk memberikan penekanan pada teks tertentu.
+    */
+
+    .font-shorthand{
+      font: italic small-caps bold 1.5rem "Arial", sans-serif; 
+    }
+    
+    /*  
+      Shorthand Font Property: Cara untuk mengatur beberapa properti font sekaligus dalam satu deklarasi. Ini memungkinkan penulisan kode CSS yang lebih ringkas dan efisien.
+
+      menggunakan shorthand property font
+      yaitu menggabungkan beberapa properti font seperti font-style, font-variant, font-weight, font-size, line-height, dan font-family dalam satu deklarasi.
+
+      urutan font shorthand property:
+      font: font-style font-variant font-weight font-size/line-height font-family;
+
+      font-style: mengatur gaya font (normal, italic, oblique).
+      font-variant: mengatur varian font (small-caps, normal).
+      font-weight: mengatur ketebalan font (normal, bold, lighter, bolder).
+      font-size: mengatur ukuran font (dalam px, em, rem, atau persentase).
+      line-height: mengatur jarak antar baris teks.
+      font-family: mengatur jenis font yang digunakan (Arial, sans-serif, dll).
+
+    */
+
+  </style>
+</head>
+<body>
+  <p class="italic">Italic Text</p>
+  <p class="oblique">Italic Text</p>
+  
+  <p class="small-caps">Small Caps Text</p>
+
+  <p style="font-size: 20px;">Font Size in 20px</p>
+  <p style="font-size: 2em;">Font Size in em</p>
+  <p style="font-size: 1.5rem;">Font Size in rem</p>
+  
+  <!--  
+    Perbedaan antara font-size dan font-weight:
+    - **Font Size**: Mengatur ukuran teks, yang dapat diukur dalam piksel (px), em, rem, atau persentase (%).
+    - **Font Weight**: Mengatur ketebalan teks, dengan nilai seperti normal, bold, lighter, dan bolder.
+  -->
+
+  <p style="font-weight: bold;">Font Size in Bold</p>
+  <p style="font-weight: lighter;">Font Size in Lighter</p>
+  
+  <!--  
+    shorthand font property adalah cara untuk mengatur beberapa properti font sekaligus dalam satu deklarasi. Ini memungkinkan penulisan kode CSS yang lebih ringkas dan efisien.
+    Contoh penggunaan shorthand font property:
+    ```css
+    .shorthand-font {
+      font: italic small-caps bold 16px/1.5 Arial, sans-serif;
+    }
+    ```
+  -->
+
+  <p class="font-shorthand">Shorthand style size Arial</p>
+</body>
+</html>
