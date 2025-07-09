@@ -1,0 +1,33 @@
+body{
+    background-color: lightyellow;;
+}
+
+.container{
+  padding: 20px;
+  background-color: lightgrey;
+  margin-bottom: 30px; 
+}
+
+.adjacent-box{
+  background-color: lightblue;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.parent{
+  background-color: lightgreen;
+  margin-top: 20px;
+}
+
+.child{
+  background-color: lightcoral;
+  margin-top: 20px;
+}
+
+.empty-element{
+  background-color: lightyellow;
+  height: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+

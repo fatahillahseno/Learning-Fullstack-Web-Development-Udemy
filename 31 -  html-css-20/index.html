@@ -3,8 +3,26 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fullstack Bootcamp</title>
+  <link rel="stylesheet" href="style.css"
 </head>
 <body>
+    <!-- margin collapsing: adjacent sibling -->
+    <section class="container">
+      <div class="adjacent-box">First Box</div>
+      <div class="adjacent-box">Second Box</div>
+    </section>
     
+    <!-- margin collapsing: parent child -->
+    <section class="container">
+      <div class="parent">
+        <div class="child">Child Box</div>
+      </div>
+    </section>
+
+    <!--  adjacent sibling but empty one of the empty element-->
+    <section class="container">
+      <div class="empty-element"></div>
+      <p class="empty-element">This is a block level element</p>
+    </section>
 </body>
 </html>
