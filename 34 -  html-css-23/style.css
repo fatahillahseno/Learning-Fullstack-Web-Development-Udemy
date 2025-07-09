@@ -1,0 +1,28 @@
+body{
+    background-color: lightyellow;;
+}
+
+.container{
+  padding: 20px;
+  background-color: lightgrey;
+  margin-bottom: 30px;
+  width: 300px;
+  height: 150px;
+}
+
+.content{
+  background-color: lightblue;
+  padding: 10px;  
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.overflow-scroll{
+  overflow: scroll;
+}
+
+.overflow-auto{
+  overflow: auto;
+}
