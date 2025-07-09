@@ -1,0 +1,49 @@
+body{
+    background-color: lightyellow;;
+}
+
+.container{
+  padding: 20px;
+  background-color: lightgrey;
+  margin-bottom: 30px; 
+}
+
+.box{
+  background-color: lightcoral;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: inline-block;
+  width: 200px;
+  height: 100px; 
+}
+
+.uniform-rounded{
+  border-radius:20px;
+}
+
+.top-left{
+  border-top-left-radius:30px;
+}
+
+.top-right{
+  border-top-right-radius:30px;
+}
+
+.bottom-left{
+  border-bottom-left-radius:30px;
+} 
+
+.bottom-right{
+  border-bottom-right-radius:30px;
+}
+
+.different-corners{
+  border-radius: 20px 40px 60px 80px; /*top-right top-left bottom-right bottom-left - TRBL*/
+}
+
+.circle{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
