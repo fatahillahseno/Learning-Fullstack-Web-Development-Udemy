@@ -1,0 +1,12 @@
+  
+  Box sizing adalah properti CSS yang mengubah cara ukuran elemen dihitung.
+  
+  Dengan box-sizing: border-box, padding dan border akan dimasukkan dalam perhitungan lebar dan tinggi elemen.
+  
+  Ini berarti bahwa jika Anda menetapkan lebar elemen menjadi 300px, itu akan mencakup padding dan border, sehingga elemen tersebut tidak akan meluas melebihi 300px.
+  
+  Jika Anda menggunakan box-sizing: content-box (nilai default), padding dan border akan ditambahkan ke lebar dan tinggi elemen, sehingga elemen tersebut dapat meluas melebihi ukuran yang ditentukan.
+  
+  Ini sangat berguna untuk menghindari masalah tata letak yang disebabkan oleh padding dan border yang tidak terduga.
+  
+  Dengan menggunakan box-sizing: border-box, Anda dapat mengontrol ukuran elemen dengan lebih baik dan memastikan bahwa elemen tersebut tetap sesuai dengan ukuran yang Anda tentukan.  
