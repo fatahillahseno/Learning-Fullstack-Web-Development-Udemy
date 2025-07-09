@@ -1,0 +1,5 @@
+Overflow adalah saat konten di dalam elemen tidak muat dalam batas yang ditentukan, sehingga konten tersebut meluap keluar dari elemen tersebut.
+
+Overflow dapat terjadi ketika konten yang ada di dalam elemen lebih besar dari ukuran elemen itu sendiri
+
+Overflow dapat diatasi dengan beberapa cara, seperti mengatur ukuran elemen, menggunakan properti CSS overflow, atau menggunakan teknik lain seperti flexbox atau grid layout.
