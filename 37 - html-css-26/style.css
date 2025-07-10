@@ -1,0 +1,55 @@
+body{
+    background-color: lightyellow;;
+}
+
+.container{
+  padding: 20px;
+  background-color: lightgrey;
+  margin-bottom: 30px;
+}
+
+.box{
+  background-color: lightblue;
+  padding: 10px;
+  width:150px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid blue;
+}
+
+.static-box{
+  background-color: lightcoral;
+  position: static; /* default */
+}
+
+/* relative position adalah perpindahan dari posisis awal */
+.relative-box{
+  background-color: lightgreen;
+  position: relative; /* default */
+  top: 100px; /* pindah 100px dari posisi top sebelumnya, berarti turun 100px*/
+  left: 100px;/* pindah 100px dari posisi left sebelumnya, berarti geser ke kanan 100px*/
+}
+
+/* 
+absolute position adalah perpindahan dari posisi awal,
+tapi mengacu pada parent yang memiliki posisi relative.
+*/
+.absolute-box{
+  background-color: lightpink;
+  position: absolute; /* posisi absolut, akan mengacu pada parent yang memiliki posisi relative */
+  top: 100px; /* pindah 100px dari posisi top sebelumnya, berarti turun 100px*/
+  left: 100px;/* pindah 100px dari posisi left sebelumnya, berarti geser ke kanan 100px*/
+}
+
+.fixed-box{
+  background-color: aqua;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.sticky-box{
+  background-color: darkorange;
+  position: sticky;
+  top: 10px;
+}
