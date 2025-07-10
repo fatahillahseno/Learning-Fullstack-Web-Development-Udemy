@@ -1,5 +1,11 @@
-Overflow adalah saat konten di dalam elemen tidak muat dalam batas yang ditentukan, sehingga konten tersebut meluap keluar dari elemen tersebut.
+  min-width adalah class yang digunakan untuk mengatur lebar minimum dari elemen, sehingga elemen tersebut tidak akan menyusut lebih kecil dari nilai yang ditentukan.
+  
+  max-width adalah class yang digunakan untuk mengatur lebar maksimum dari elemen, sehingga elemen tersebut tidak akan melebar lebih besar dari nilai yang ditentukan.
 
-Overflow dapat terjadi ketika konten yang ada di dalam elemen lebih besar dari ukuran elemen itu sendiri
+  min-height adalah class yang digunakan untuk mengatur tinggi minimum dari elemen, sehingga elemen tersebut tidak akan menyusut lebih kecil dari nilai yang ditentukan.
 
-Overflow dapat diatasi dengan beberapa cara, seperti mengatur ukuran elemen, menggunakan properti CSS overflow, atau menggunakan teknik lain seperti flexbox atau grid layout.
+  max-height adalah class yang digunakan untuk mengatur tinggi maksimum dari elemen, sehingga elemen tersebut tidak akan melebar lebih besar dari nilai yang ditentukan.
+
+  min-width dan max-width sering digunakan untuk mengontrol responsivitas elemen, sedangkan 
+  
+  min-height dan max-height digunakan untuk mengontrol tinggi elemen dalam konteks yang berbeda.
