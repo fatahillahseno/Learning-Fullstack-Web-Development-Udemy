@@ -1,0 +1,44 @@
+body{
+    background-color: lightyellow;;
+}
+
+.container{
+  padding: 20px;
+  background-color: lightgrey;
+  margin-bottom: 30px;
+  position: relative;
+  height: 300px;
+}
+
+.box{
+  background-color: lightblue;
+  padding: 10px;
+  width:150px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid blue;
+}
+
+.box1{
+  position: absolute;
+  z-index: 3;
+  background-color: lightblue;
+  top: 50px;
+  left: 50px;
+}
+
+.box2{
+  position: absolute;
+  z-index: 2;
+  background-color: lightcoral;
+  top: 100px;
+  left: 100px; 
+}
+
+.box3{
+  position: absolute;
+  z-index: 4;
+  background-color: lightgreen;
+  top: 150px;
+  left: 150px; 
+}  

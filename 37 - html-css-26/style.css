@@ -50,6 +50,7 @@ tapi mengacu pada parent yang memiliki posisi relative.
 
 .sticky-box{
   background-color: darkorange;
+  
   position: sticky;
   top: 10px;
 }
