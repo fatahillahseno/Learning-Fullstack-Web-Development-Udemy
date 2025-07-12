@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fullstack Bootcamp</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!--  
+  inheritance adalah proses dimana sebuah elemen HTML mewarisi properti CSS dari elemen induknya.
+  -->
+
+  <!--  
+  pada section ini, inheritance berpengaruh pada jeinis font, warna, dan ukuran font.
+  -->
+  <section>
+    <p class="parent-text">Paragraph Text</p>
+    <p class="child-text">Override the color of the text</p>
+  </section>
+
+  <!--  
+  pada section ini, inheritance tidak pada width dan padding.
+  karena width dan padding tidak diwarisi oleh elemen anak, maka kita harus mengatur ulang
+  -->
+  <section>
+    <div class="not-inherited">
+      <p>Width and the padding are not inherited</p>
+      <div class="child-box">
+        <p>Width and the padding are not inherited</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!--  
+    middle box dan inner box tidak akan mewarisi properti (padding, border dan background color) CSS dari outer box.
+  -->
+  <section>
+    <div class="outer-box">
+      <p>Outer Box Styles</p>
+      
+      <!-- 
+      inner box tidak mewarisi properti css dari middle box (padding, border, dan background color dari middle box) 
+      -->
+      <div class="middle-box">
+        <p>Middle box overrides some outer styles</p>
+        <div class="inner-box">
+          <p>Inner box inherits from the parent as well as grand parents</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  
+  jadi kesimpulannya, inheritance adalah proses dimana sebuah elemen HTML mewarisi properti CSS dari elemen induknya.
+  
+  propeti yang tidak bisa diwarisi oleh elemen anak adalah 
+  width, height, margin, padding, border, dan background color.
+
+  properti yang bisa diwarisi oleh elemen anak adalah
+  jenis font, warna, dan ukuran font.
+  -->
+</body>
+</html>

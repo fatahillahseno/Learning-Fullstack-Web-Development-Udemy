@@ -1,0 +1,45 @@
+body{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: blue;
+}
+
+.parent-text{
+  font-size: 18px;
+}
+
+.child-text{
+  color: darkred;;
+}
+
+.not-inherited{
+  width: 200px;
+  padding: 5px;
+  border: 2px solid blue;
+  background-color: lightyellow;
+}
+
+.child-box{
+  width:100px;
+  background-color: lightgrey;
+}
+
+.outer-box{
+  color: navy;
+  padding: 15px;
+  border: 2px solid navy;
+  background-color: lightblue;
+}
+
+.middle-box{
+  padding: 10px;
+  border: 2px solid red;
+  background-color: lightgray;
+  font-size: 20px;
+}
+
+.inner-box{
+  padding: 5px;
+  border: 2px solid blue;
+  background-color: white;
+}
