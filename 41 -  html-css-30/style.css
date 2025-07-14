@@ -1,0 +1,58 @@
+/*  
+!- Tag Selector <p>: 1 point
+!- Class Selector .class: 10 points
+!- ID Selector #id: 100 points
+!- !important: 1000 points
+!- inline style: 10000 points
+*/
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  color: red; /* 1 point */
+}
+
+#unique{
+  color: purple; /* 100 points */
+}
+
+.example{
+  color: green; /* 10 points */ 
+}
+
+#parent{
+  color: navy; /* 100 points */
+}
+/*  
+  style yang ditetapkan pada id parent hanya mewarisi saja walaupun memiliki 100 pints,
+  namun tetap style yang akan ditampilkan adalah style yang ditetapkan pada class child karena merupakan direct/ spesific selection
+*/
+.child{
+  color: green; /* 10 points */
+}
+
+[data-examples]{
+  color: brown;
+}
+/* class selector selalu punya point yang lebih tinggi daripada atribut selector */
+.attr{
+  color: violet;;
+}
+/* id selector selalu punya point yang lebih tinggi daripada class selector */
+#attribute-example{
+  color: magenta;
+}
+
+/* point keseluruhan: 100 + 100 + 10 = 210 points */
+#wrapper #element .link{
+  color: darkred;
+  font-weight: bold;
+}
+
+/* point keseluruhan:  1 point */
+a{
+  color: blue;
+  text-decoration: underline;
+}
