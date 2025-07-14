@@ -1,0 +1,15 @@
+body{
+  font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+.basic{
+  color: red !important;
+}
+
+.basic{
+  color: blue;
+}
+
+.inline{
+  color: purple !important;
+}
