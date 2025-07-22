@@ -1,0 +1,58 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray
+}
+
+.box{
+  background-color: white;
+  padding: 20px;
+  margin: 10px 0px;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 480px) {
+  body{
+    background-color: lightpink;
+  }
+
+  p{
+    font-size: 1.2rem;
+  }
+
+  .box{
+    background-color: lightgreen;
+  }
+}
+
+/* Tablets - Potrait */
+@media screen and (min-width: 481px) and (max-width: 1024px) and (orientation: portrait){
+  body{
+    background-color: lightblue;
+  }
+
+  .box{
+    background-color: lightpink;
+  }
+}
+
+/* Tablets - Landscape */
+@media screen and (min-width: 481px) and (max-width: 1200px) and (orientation: landscape){
+  body{
+    background-color: lightgoldenrodyellow;
+  }
+
+  .box{
+    background-color: lightblue;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1201px) {
+  body{
+    background-color: lightseagreen;
+  }
+
+  .box{
+    background-color: lightgoldenrodyellow  ;
+  }
+}
