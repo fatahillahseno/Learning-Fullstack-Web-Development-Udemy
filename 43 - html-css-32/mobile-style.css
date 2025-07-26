@@ -1,0 +1,11 @@
+body{
+    background-color: lightpink;
+  }
+
+  p{
+    font-size: 1.2rem;
+  }
+
+  .box{
+    background-color: lightgreen;
+  }
