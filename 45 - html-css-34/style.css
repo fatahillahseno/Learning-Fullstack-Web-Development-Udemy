@@ -1,0 +1,31 @@
+.flex-container{
+  display: flex;
+  padding: 10px;
+  background-color: lightgrey;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  gap: 10px;
+}
+
+.flex-item{
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  border:  1px solid grey;
+}
+
+.default-flex{
+  flex-direction: row;
+}
+
+.row-reverese-flex{
+  flex-direction: row-reverse ;
+}
+
+.column-flex{
+  flex-direction: column;
+}
+
+.column-reverse-flex{
+  flex-direction: column-reverse;
+}
