@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullstack Bootcamp</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <section class="responsive-image-section">
+    <img src="images/large.jpg" alt="A beautiful landscape">
+  </section> 
+
+  <section class="responsive-image-section">
+    <picture>
+      <source media="(max-width:600px)" srcset="images/small.jpg" />
+      
+      <source media="(max-width:1024px)" srcset="images/medium.jpg" />
+      
+      <source media="(min-width:1025px)" srcset="images/large.jpg" />
+      
+      <!-- ini masih ditulis karena jika image dari media query tidak tampil maka tag img ini yang akan tampil -->
+      <img src="images/large.jpg" alt="A beautiful landscape">
+    </picture>
+  </section>
+
+  <!-- background images using in css -->
+  <!-- disini image tidak masuk ke dalam struktur HTML -->
+  <section class="responsive-image-section">
+    <div class="background-container"></div>
+  </section>
+
+  <section class="responsive-image-section">
+    <div class="background-repeat-container"></div>
+  </section>
+</body>
+</html> 
