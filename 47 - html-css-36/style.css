@@ -1,0 +1,50 @@
+.flex-container{
+  display: flex;
+  padding: 10px;
+  background-color: lightgrey;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  gap: 10px;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-column{
+  flex-direction: column;
+  min-height: 700px;
+} 
+
+.flex-item{
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  border:  1px solid grey;
+  width: 150px;
+  height: 100px;
+}
+
+.flex-start{
+  justify-content: flex-start;
+}
+
+.flex-end{
+  justify-content: flex-end;
+}
+
+.flex-center{
+  justify-content: center;
+}
+
+.flex-space-between{
+  justify-content: space-between;
+}
+
+.flex-space-around{
+  justify-content: space-around;
+}
+
+.flex-space-evenly{
+  justify-content: space-evenly;
+}
