@@ -48,3 +48,35 @@
 .nav-menu li a:hover{
   color: var(--primary-color);
 }
+
+.search-input{
+  background-color: #F4F4F5;
+  min-width: 166px;
+  min-height: 36px;
+  border-radius: 4px;
+  border: 1px  solid rgba(255,255,255,0);
+  text-indent: 16px;
+}
+
+.search-input::placeholder{
+  font-size:0.875rem ;
+  color: #A1A1AA;
+  line-height: 20px;
+}
+
+.search-input:focus{
+  outline: none;/* hilangkan border defaultnya dulu */
+  border: 1px solid var(--primary-color);/* baru ganti dengan warna yang diinginkan */
+  color: #3B3C4A;
+}
+
+.search-container{
+  position: relative;
+}
+
+.search-icon{
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  pointer-events: none;
+}
