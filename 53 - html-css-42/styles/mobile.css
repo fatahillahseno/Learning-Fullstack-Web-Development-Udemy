@@ -9,3 +9,14 @@
 .hero-image{
   min-height: 250px;
 }
+
+.hero-section{
+  position:static;
+}
+
+.hero-description{
+  width: 80%;
+  left:10%; /* karena width 80%, sisa 20% space, jika kita memberikan 10% left, maka otomatis rightnya 10%, maka akan jadi di tengah-tengah  */
+  padding: 20px;
+  top: 300px;
+}
