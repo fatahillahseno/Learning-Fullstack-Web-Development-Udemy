@@ -1,14 +1,14 @@
-*{
+* {
   font-family: var(--font-family);
 }
 
-.header{
+.header {
   display: flex;
   justify-content: center;
   height: 108px;
 }
 
-.header-wrapper{
+.header-wrapper {
   display:flex;
   padding: 32px 16px;
   max-width: var(--max-width);
@@ -17,39 +17,39 @@
   justify-content: space-between;
 }
 
-.logo{
+.logo {
   height: 42px  ;
 }
 
-.nav-bar{
+.nav-bar {
   height: 42px;
   display: flex;
 }
 
-.nav-menu{
+.nav-menu {
   display: flex;
   column-gap: 40px;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.nav-menu li{
+.nav-menu li {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-.nav-menu li a{
+.nav-menu li a {
   font-family: var(--font-family);
   text-decoration: none;
   color: #3B3C4A ;
   transition: color 0.5s;
 }
 
-.nav-menu li a:hover{
+.nav-menu li a:hover {
   color: var(--primary-color);
 }
 
-.search-input{
+.search-input {
   background-color: #F4F4F5;
   min-width: 166px;
   min-height: 36px;
@@ -58,23 +58,23 @@
   text-indent: 16px;
 }
 
-.search-input::placeholder{
+.search-input::placeholder {
   font-size:0.875rem ;
   color: #A1A1AA;
   line-height: 20px;
 }
 
-.search-input:focus{
+.search-input:focus {
   outline: none;/* hilangkan border defaultnya dulu */
   border: 1px solid var(--primary-color);/* baru ganti dengan warna yang diinginkan */
   color: #3B3C4A;
 }
 
-.search-container{
+.search-container {
   position: relative;
 }
 
-.search-icon{
+.search-icon {
   position: absolute;
   right: 8px;
   top: 6px;
@@ -82,13 +82,13 @@
 }
 
 /* Hero Section starts here */
-.main-section{
+.main-section {
   padding: 16px;
   max-width: var(--max-width);
   margin: auto;
 }
 
-.hero-image{
+.hero-image {
   min-height: 600px;
   background-image: url("../images/hero.png");
   background-repeat: no-repeat;
@@ -98,10 +98,53 @@
   background-position: center;
 }
 
-.hero-description{
+.hero-description {
   width: 600px;
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 12px 24px -6px rgba(24, 26, 42, 0.12), inset 0 0 0 1px #E8E8EA;
   padding: 40px;
 }
+
+.badge-container {
+  min-height: 28px;
+  margin-bottom: 16px;
+
+}
+
+.hero-badge {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  padding: 12px 12px;
+  border-radius: 0.5rem;
+  margin-bottom: 16px;
+}
+
+.article-details h1 a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: var(--heading-font-color);
+}
+
+.author-section {
+  display:flex;
+  align-items: center;
+  column-gap:20px;
+  font-size: 1rem;
+  color: #97989F;
+  margin-top: 24px;
+}
+
+.author-section img {
+  width: 48px;
+  height: auto;
+  border-radius: 1.75rem;
+}
+.author-name{
+  font-weight:500;
+}
+
