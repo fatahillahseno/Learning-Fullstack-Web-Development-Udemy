@@ -2,6 +2,7 @@
   font-family: var(--font-family);
 }
 
+/* header */
 .header {
   display: flex;
   justify-content: center;
@@ -155,3 +156,15 @@
   font-weight:500;
 }
 
+/* Latest Post Section */
+.blogs-section {
+  margin-top: 10rem;
+}
+
+.blogs-section h1{
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.
