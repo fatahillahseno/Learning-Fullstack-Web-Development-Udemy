@@ -9,13 +9,39 @@
 <body>
   <form>
     <div class="form-container">
+      
       <div class="form-column">
         <label for="firstname">First Name</label>
-        <input type="text" id="firstname" name="firstname" required/>
+        <input type="text" id="firstname" name="firstname" placeholder="First Name" required/>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="name@email.com"/>
+        
+        <label for="phone">Phone Number</label>
+        <input 
+        type="tel" id="phone" name="phone" 
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="123-456-7890"     
+        />
+        <!-- pattern untuk no telepon : 
+          3 digit pertama - 3 digit kedua - 4 digit terakhir
+          [0-9] ini menunjukkan angka 0 sampai 9
+          {3} ini menunjukkan jumlah digit yang harus diisi
+        -->
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Age" required/>
       </div>
+
       <div class="form-column">
         <label for="lastname">Last  Name</label>
-        <input type="text" id="lastname" name="lastname" required/>
+        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required/>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password"/>
+        
+        <label for="web">Website</label>
+        <input type="url" id="web" name="web" placeholder="Your Website"/>
       </div>
     </div>
     <div>
