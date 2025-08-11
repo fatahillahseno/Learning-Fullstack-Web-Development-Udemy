@@ -7,27 +7,77 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <table>
+  <table class="horizontal-header">
+    <!-- caption untuk memberitahukan data apa yang ada di dalam tabel -->
+    <caption>Horizontal Table Header</caption>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ronald</td>
+        <td>Edward</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>Lacrimosa</td>
+        <td>Yeiger</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Gunsi</td>
+        <td>Xiao</td>
+        <td>59</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="vertical-header">   
+    <caption>Vertical Table Header</caption>
+    <tbody>
     <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Age</th>
+      <th>Revenue</th>
+      <td>Rp. 100.000</td>
+      <td>Rp. 125.000</td>
+      <td>Rp. 150.000</td>
     </tr>
     <tr>
-      <td>Ronald</td>
-      <td>Edward</td>
-      <td>26</td>
+      <th>Expenses</th>
+      <td>Rp. 50.000</td>
+      <td>Rp. 75.000</td>
+      <td>Rp. 100.000</td>
     </tr>
-    <tr>
-      <td>Lacrimosa</td>
-      <td>Yeiger</td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <td>Gunsi</td>
-      <td>Xiao</td>
-      <td>59</td>
-    </tr>
+    </tbody>
+  </table>
+  
+  <table class="combined-header">   
+    <caption>Combined Table Header</caption>
+    <thead>
+      <tr>
+        <th>Metrics</th>
+        <th>Q1</th>
+        <th>Q2</th>
+        <th>Q3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Revenue</th>
+        <td>Rp. 100.000</td>
+        <td>Rp. 125.000</td>
+        <td>Rp. 150.000</td>
+      </tr>
+      <tr>
+        <th>Expenses</th>
+        <td>Rp. 50.000</td>
+        <td>Rp. 75.000</td>
+        <td>Rp. 100.000</td>
+      </tr>
+    </tbody>
   </table>
 </body>
 </html>

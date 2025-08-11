@@ -2,29 +2,71 @@ table {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   border-collapse: collapse; /* properti ini untuk membuat border pada table */
+  margin-bottom:50px;
 }
 
+table caption {
+  margin-bottom: 15px;
+}
 td, th {
   border: 1px solid #000;
   text-align: center;
   padding: 8px;
 }
 
-tr:nth-child(even) { /* table row yang baris genap */
-  background-color: #ddd;
-}
+
+
+/* css horizontal header table */
 
 /* merubah ukuran kolom pertama dalam suatu tabel */
-th:first-child, td:first-child {
-  width: 50%;
-}
-
-th:nth-child(2), td:nth-child(2),
-th:nth-child(3), td:nth-child(3) {
+.horizontal-header tr, td {
   width: 25%;
 }
 
-tr:first-child{
+.horizontal-header tr:nth-child(odd) { /* table row yang baris genap */
+  background-color: #ddd;
+}
+
+.horizontal-header tr th {
   height: 50px;
-  background-color: greenyellow;
+  background-color: grey;
+  color: white;
+}
+
+/* css vertical header table */
+.vertical-header tr {
+  background-color: white;
+}
+.vertical-header th:first-child,td:first-child{
+  width: auto;
+}
+
+.vertical-header th:first-child{
+  background-color: lightgoldenrodyellow;
+  width: 28%;
+}
+
+/* css combined header table */
+
+
+.combined-header th:first-child, td:first-child{
+  width: 25%;
+}
+
+.combined-header thead th:first-child{
+  background-color: darkorange;
+  color: white;
+}
+
+.combined-header thead th:nth-child(2),th:nth-child(3),th:nth-child(4){
+  background-color: blue;
+  color: white;
+}
+
+.combined-header tbody 
+tr:first-child th:first-child,
+.combined-header tbody 
+tr:nth-child(2) th:nth-child(1) {
+  background-color: red;
+  color: white;
 }
