@@ -1,0 +1,15 @@
+table{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border-collapse: collapse; /* properti ini untuk membuat border pada table */
+}
+
+td, th{
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){ /* table row yang baris genap */
+  background-color: #ddd;
+}
