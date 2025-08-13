@@ -1,0 +1,36 @@
+/* General Table Styles */
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100% ;
+  margin-bottom: 80px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Header Styling */
+th {
+  background-color: lightblue;
+  color: white;
+  text-align: center;
+}
+
+/* Larger Header Cells */
+.header-large{
+  padding: 10px;
+  font-size:1.2rem;
+}
+
+/* Custom Row Height */
+tr.custom-height{
+  height: 50px;
+}

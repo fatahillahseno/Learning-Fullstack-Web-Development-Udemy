@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullstack Bootcamp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rowspan and Colspan in Tables</h1>
+
+  <h2>Rowspan Examples</h2>
+  <table>
+    <tr>
+      <th class="header-large" rowspan="2">Product</th>
+      <!-- karena ada satu cell di bawah cell product 
+      maka cell ini bisa mengambil dua baris di bawahnya
+      menggunakan rowspan = 2, yang artinya cell tersebut
+      akan mengambil dua baris (barisnya dan satu baris di bawahnya)
+      -->
+      <th class="header-large">Q1</th>
+      <th class="header-large">Q2</th>
+    </tr>
+    <tr>
+      <td>$100</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <td>Item 2</td>
+      <td>$200</td>
+      <td>$250</td>
+    </tr>
+  </table>
+
+  <h2>Colspan Example</h2>
+  <table>
+    <tr>
+      <th>Product</th>
+      <th class="header-large" colspan="2">Quarterly Revenue</th>
+    </tr>
+    <tr>
+      <tr>
+      <td>Item 1</td>
+      <td>$100</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <td>Item 2</td>
+      <td>$200</td>
+      <td>$250</td>
+    </tr>
+    </tr>
+  </table>
+  
+  <h2>Combination of Rowspan and Colspan</h2>
+  <table>
+    <tr>
+      <th class="header-large" rowspan="2">Employee</th>
+      <th class="header-large" colspan="2">Sales Performance</th>
+    </tr>
+    <tr>
+      <td>Q1</td>
+      <td>Q2</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>$300</td>
+      <td>$500</td>
+    </tr>
+    <tr>
+      <td>Jane</td>
+      <td>$400</td>
+      <td>$600</td>
+    </tr>
+  </table>
+
+  <h2>Advanced Rowspan and Colspan Example</h2>
+  <table>
+    <tr>
+      <th class="header-large" rowspan="2">Region</th>
+      <th class="header-large" colspan="3">Sales Data</th>
+    </tr>
+    <tr>
+      <td>Q1</td>
+      <td>Q2</td>
+      <td>Q3</td>
+    </tr>
+    <tr>
+      <td>North</td>
+      <td>$500</td>
+      <td>$600</td>
+      <td rowspan="2" >$800</td>
+      <!-- This spans the 3rd quarter for two rows -->
+    </tr>
+    <tr>
+      <td>South</td>
+      <td>$300</td>
+      <td>$400</td>
+    </tr>
+    <tr>
+      <td>East</td>
+      <td colspan="2">$700</td>
+      <!-- this spans two quartes for Q1 dan Q2 -->
+      <td>$900</td>
+    </tr>
+  </table>
+
+
+</body>
+</html>
