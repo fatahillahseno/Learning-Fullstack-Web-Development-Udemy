@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack Bootcamp</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // let multiLineString = "This is a\n" + "multi line string";
+      /* \n adalah sebuah escape character yaitu untuk membuat baris baru */
+
+      let multiLineString = `This is a\nmulti line string
+      `;
+      console.log(multiLineString);
+
+      // string interpolation
+      // String interpolation adalah fitur pada JavaScript yang memungkinkan kita memasukkan variabel atau ekspresi ke dalam string menggunakan tanda backtick (`) dan sintaks ${variabel}.
+
+      let firstName = "Alice";
+      let greeting = `Hello ${firstName}`;
+      console.log(greeting);
+
+      // another example
+      let x = 51;
+      let y = 78;
+
+      let sum = `the sum of ${x} and ${y} is ${x + y}`;
+      console.log(sum);
+
+      // cukup gunakan backticks, dan atus single atau double quote sesuai kebutuhan
+      let escapeChars = `String "Double Quote" and 'Single Quote'`;
+
+      // harus menggunakan escape character pada double dan single quote
+      let escapeChars2 = "String \"Double Quote\" and 'Single Quote'";
+
+      console.log("Literal Template");
+      console.log(escapeChars);
+      console.log("Normal String");
+      console.log(escapeChars2);
+
+      /* 
+      // 
+      */
+    </script>
+  </head>
+  <body></body>
+</html>
