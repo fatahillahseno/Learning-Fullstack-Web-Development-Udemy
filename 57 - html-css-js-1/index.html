@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullstack Bootcamp</title>
+  <link rel="stylesheet" href="style.css"/> 
+  <script>
+    // ini adalah komentar satu baris (single-line comment)
+    
+    /* 
+      ini adalah komentar banyak baris (multi-line comment)
+    */
+
+    // deklarasikan variabel dengan var
+    var name;
+    name ="John";
+    name ="Jane";
+    
+    console.log(name)
+
+    // deklarasikan variabel dengan let
+    let _age = 25;
+    _age = 30;
+    console.log(_age);
+
+    /* 
+    var dan let bisa dideklarasikan tanpa nilai awal
+    var dan let bisa dideklarasikan lagi dengan nilai yang berbeda atau bisa kita sebut reassign
+    
+    namun nilai pada variabel var dan let akan ditimpa nilai yang baru
+    */
+
+    /* var berada di scope global atau function
+    yang berarti bisa diakses di mana saja dalam file ini */
+
+    /* let berada di scope block
+    yang berarti hanya bisa diakses dalam block tempat variabel itu dideklarasikan */
+
+    const COUNTRY = "Indonesia";
+    /* const menggunakan huruf kapital agar mudah dibedakan
+    bahwa ini ada const dan tidak bisa diubah nilainya */
+
+
+    /* country = "USA"; */ 
+    // ini akan menghasilkan error karena kita tidak bisa mengubah nilai dari variabel yang dideklarasikan dengan const
+
+    // const berada di scope global atau function
+    // yang berarti bisa diakses di mana saja dalam file ini  
+    // namun tidak bisa dideklarasikan ulang
+    console.log(COUNTRY);
+  </script>
+
+</head>
+<body>
+</body>
+</html>
