@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack Bootcamp</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // Type Data String
+      // string adalah tipe data yang digunakan untuk menyimpan teks
+      // dan harus diapit dengan tanda kutip (baik tunggal atau ganda)
+      // semua yang diapit tidak bisa melakukan operasi matematika
+
+      let myname = "John Doe";
+      let greeting = "Hello";
+      let greetings = "Hello";
+      let numberString = "12345";
+      /*
+        ini tetap dihitung sebagai string, walaupun berisi angka
+        namun bisa digunakan untuk operasi string seperti penggabungan
+        semisalhya:
+
+        let code_category = "PEN"
+        let code_id = "12345"
+
+        let code_product = code_category + code_id;
+        console.log(code_product); // PEN12345
+      */
+
+      let fullGreeting = greeting + ", " + myname;
+      /*
+      disini terjadi string concatenation,
+      yaitu proses penggabungan string
+      dengan menggunakan simbol tambah (plus)
+      */
+
+      console.log(fullGreeting + " is " + typeof fullGreeting);
+      console.log(`fullGreeting + " is " + typeof fullGreeting`);
+
+      /*
+      jika kita ingin mengetahui tipe data suatu variabel
+      kita bisa menggunakan typeof
+      contoh:
+      typeof code_product; //string
+      */
+
+      // Type Data Number
+      let age = 25;
+      let newAge = age + 1; /* js akan berpikir age dan newAge */
+      console.log(age + " is " + typeof age);
+      console.log(newAge);
+
+      // Type Data Boolean
+      let isStudent = true;
+      let isTeacher = false;
+      console.log(typeof isStudent);
+    </script>
+  </head>
+  <body></body>
+</html>
