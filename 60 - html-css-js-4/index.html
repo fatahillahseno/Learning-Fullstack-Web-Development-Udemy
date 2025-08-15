@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack Bootcamp</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // variabel ini akan ada namun belum didefinisikan value nya
+      let unassignedVariable;
+      console.log("unassignedVariable:", unassignedVariable);
+      console.log("typeof unassignedVariable:", typeof unassignedVariable);
+
+      // variabel ini akan didefiniskan value kosong/null
+      let emptyVariable = null;
+      console.log("emptyVariable:", emptyVariable);
+      console.log("typeof emptyVariable:", typeof emptyVariable);
+
+      /* 
+      perbedaan pada undefined dan null adalah 
+      variabel undefined berarti belum diisi
+      sedangkan
+      variabel null berarti memang sengaja dikosongkan.
+      
+      perbedaan pada undefined dan null
+      terletak pada typeof dari tipe data tersebut.      
+
+      typeof dari variabel undefined 
+      akan menghasilkan undefined.
+
+      typeof dari variabel null 
+      akan menghasilkan object.
+
+      kenapa menjadi object, padahal object bukanlah tipe data primitif
+      jadi pada saat js dibuat, null diklasifikasikan sebagai objek
+      hal ini merupakan sebuah error, jadi jangan bingung ketika memeriksa typeof dari sebuah variabel null, error ini berasal dari bahasa pemrograman js itu sendiri.
+      */
+    </script>
+  </head>
+  <body></body>
+</html>
