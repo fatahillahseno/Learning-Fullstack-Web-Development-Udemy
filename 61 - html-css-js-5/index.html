@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack Bootcamp</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // type data big integer
+      let maxInteger = Number.MAX_SAFE_INTEGER;
+      console.log(maxInteger);
+      console.log(maxInteger + 1);
+      console.log(maxInteger + 2);
+      console.log(maxInteger + 3);
+      console.log(maxInteger + 4);
+
+      /* type data Number ketika melebihi max_safe_integer, operasi matematika akan tidak dapat diprediksi seperti
+
+      console.log(maxInteger + 2);
+
+      penjumlahannya tidak bertambah dari maksimal angka yang bisa dilakukan variabel bertipe data Number
+
+      console.log(maxInteger + 4);
+
+      pada penjumlahan ini angka bertambah tetapi memiliki hasil yang tidak tepat
+
+      maka dari itu jika kita melebihi batas maksimum operasi matematika yang akan dilakukan akan tidak bisa diprediksi
+
+      Lalu js memberikan opsi lain untuk masalah seperti ini yaitu Big integer menggunakan function BigInt()
+
+      ciri ciri big int ketika kita melakukan console.log pada variabel bigint
+      angka yang keluar akan berakhir n, misal 123n
+      sama halnya dengan operasi matematikanya, harus diikut dengan n, misal bigIntVar + 1000n
+      */
+
+      let bigInteger = BigInt(maxInteger);
+      console.log(bigInteger);
+      console.log(typeof bigInteger);
+      console.log(bigInteger + 1000n);
+
+      // type data symbol
+
+      /* 
+      penggunaan symbol dikhususkan pada kasus tertentu saja, terutama penggunaan pada javascript object 
+      
+      javascript memberikan constructor function yang memastikan akan selalu unique/tidak sama dengan yang lain 
+      */
+
+      let symbol1 = Symbol();
+      let symbol2 = Symbol();
+      console.log(
+        symbol1 === symbol2
+      ); /* akan menghasilkan false karena tiap penggunaan Symbol() akan selalu memiliki value berbeda */
+      console.log(typeof symbol1);
+    </script>
+  </head>
+  <body></body>
+</html>
