@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Stack Bootcamp</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // comparison operator
+      // operasi membandingkan variabel-variabel
+
+      // memeriksa apakah sama
+      // menggunakan double equal ( == ) atau triple equal ( === )
+      // akan mengembalikan nilai berupa true dan false ketika variabel memiliki value yang sama
+      let num = 10;
+      let str1 = "10";
+
+      // double equal
+      console.log("Equal == :", num == str1); //true
+      // bernilai true, karena pengecekan berdasarkan perbandigan bebas (liberal comparison)
+      // dimana hanya isi dari variabel yang dibandingkan, yaitu number 10 dan string "10"
+
+      // triple equal
+      console.log("Equal === :", num === str1); //false
+      // bernilai false, karena pengecekan berdasarkan perbandigan ketat (strict comparison)
+      // dimana isi dan tipe data dari variabel dibandingkan, yaitu number 10 dan string "10"
+      // ------------------------------------------------------------------
+      // memeriksa apakah tidak sama
+      // menggunakan not single equal ( != ) atau not double equal ( !== )
+      // akan mengembalikan nilai berupa true dan false ketika variabel memiliki value yang tidak Ssama
+      let num2 = 5;
+      let str2 = "5";
+
+      console.log("Not Single Equal (!=) :", num2 != str2); //false
+      // bernilai false karena isi dari variabel sama sama berisikan karakter angka 5
+
+      console.log("Not Dua kali lipat Equal (!==):", num2 !== str2); //true
+      // bernilai true karena tipe data yang berbeda (number dengan string) walaupun isi variabel yang sama
+
+      // ------------------------------------------------------------------
+      // membandingkan lebih besar atau kecil,lebih besar sama dengan atau lebih kecil sama dengan
+      let age1 = 25;
+      let age2 = 17;
+      console.log("lebih besar dari:", age1 > age2); //true
+      // bernilai true karena 25 memang lebih besar dari 17
+      console.log("lebih kecil dari:", age1 < age2); //false
+      // bernilai false karena 25 tidak lebih kecil dari 17
+
+      let score1 = 80;
+      let score2 = 80;
+      console.log("lebih besar sama dengan dari:", score1 >= score2); //true
+      // pada saat kondisi pertama diperiksa yaitu 80 > 80, akan mengembalikan nilai false
+      // lalu operasi kedua dilakukan 80 = 80 akan mengembalikan nilai benar karena comparison operatornya memiliki operator equal =, dimana 80 = 80
+      // jika salah satu kondisi terpenuhi, maka akan menghasilkan final result berupa true
+
+      let score3 = 90;
+      let score4 = 80;
+      console.log("lebih kecil sama dengan dari:", score3 <= score4); //false
+      // kondisi pertama 90 < 80, mengembalikan nilai false
+      // kondisi kedua 90 = 80, mengembalikan nilai false
+      // tidak ada salah satu kondisi terpenuhi, maka final result = false
+    </script>
+  </head>
+  <body></body>
+</html>
