@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Stack Bootcamp</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // logical operator
+      // bisa menggabungkan dua atau lebih kondisi
+
+      // not operator ( ! )
+      let num1 = 10;
+      let str1 = "10";
+      console.log(num1 != str1);
+
+      /* -------------------------------------------------- */
+
+      // and ( && ) operator
+      // semua kondisi harus terpenuhi baru akan menghasil final result true
+      console.log(
+        `num1 = 10, str1 = "10"\nnum1 < 12 && str1 > 8 && num1 === 10\nfinal result:`,
+        num1 < 12 && str1 > 8 && num1 === 10
+      ); // mengembalikan nilai true
+      // kenapa bisa true karena 10 memang kurang dari 12 dan 10 memang lebih dari 8 serta num1 memang bernilai dan bertipe data dengan 10
+      console.log(
+        `num1 = 10, str1 = "10"\nnum1 < 12 && str1 > 8 && num1 === 11\nfinal result:`,
+        num1 < 12 && str1 > 8 && num1 === 11
+      ); // mengembalikan nilai false, karena kondisi num1 === 11 tidak bernilai true, jika salah satu kondisi pada and operator tidak terpenuhi final result mengembalikan nilai false
+
+      /* -------------------------------------------------- */
+
+      // or ( || ) operator
+      // jika salah satu kondisi terpenuhi, maka final result akan mengembalikan nilai true
+      console.log(
+        `num1 = 10, str1 = "10"\nnum1 < 12 || str1 < 8\nfinal result:`,
+        num1 < 12 || str1 < 8
+      ); //true
+      // kenapa masih bernilai true, karena operator or || , hanya perlu satu kondisi yang terpenuhi.
+      // dimana kondisi num1 < 12, terpenuhi.
+      // walaupun str1 < 8, tidak terpenuhi.
+
+      /* -------------------------------------------------- */
+
+      // Nullish Coalescing ( ?? )
+      // memeriksa apakah variabel itu null atau undefined
+      let name = null;
+      console.log(
+        `name = null\nname ?? "Default Value"\nfinal result:`,
+        name ?? "Default Value"
+      );
+      let name2 = "Budi";
+      console.log(
+        `name2 = "Budi"\nname2 ?? "Default Value"\nfinal result:`,
+        name2 ?? "Default Value"
+      );
+      // cara baca
+      // jika variabel name bernilai null atau undefined
+      // maka kembalikan nilai bertipe string "Default Value"
+      // jika tidak maka kembalikan nilai seperti yang di-assign pada variabel tersebut
+
+      let age = 25;
+      console.log(`age = 25\nage ?? 10\nfinal result: `, age ?? 10);
+      // jika age bernilai null/undefined maka mengembalikan nilai 10
+      // jika tidak kembalikan nilai yang ada di variabel tersebut
+
+      /* -------------------------------------------------- */
+
+      // Nullish Assignment (??=)
+      // jika variabel bernilai null atau undefined
+      // maka kembalikan nilai yang ditentukan
+      // jika tidak
+      let x = null;
+      let y = 999;
+      console.log(`x = null\nx ??= 10\nfinal result:`, (x ??= 10));
+      console.log(`y = 999\ny ??= 10\nfinal result:`, (y ??= 10));
+    </script>
+  </head>
+  <body></body>
+</html>
