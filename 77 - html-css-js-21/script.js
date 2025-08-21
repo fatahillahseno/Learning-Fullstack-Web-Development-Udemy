@@ -70,19 +70,26 @@ console.log(`Nested Scope Example:`);
 
 function outerFunction() {
   var outerVar = "I am an outer variable";
+  let outerLet = "I am an outer let variable";
 
   function innerFunction() {
-    // fungsi innerFunction bisa mengakses variabel outerVar dan innerVar
+    // fungsi innerFunction bisa mengakses variabel outerVar, outerLet dan innerVar, innerLet
 
     var innerVar = "I am an inner variable";
+    let innerLet = "I am an inner let variable";
+
     console.log(outerVar); // Akses variabel dari fungsi luar
-    console.log(innerVar); // Akses variabel dari fungsi dalam
+    console.log(outerLet); // Akses variabel dari fungsi luar
   }
 
-  // namun fungsi outerFunction tidak bisa mengakses variabel innerVar, karena innerVar hanya dapat diakses di dalam fungsi innerFunction
-
   innerFunction(); // Memanggil fungsi dalam
-  // console.log(innerVar);
-  // Akan menghasilkan error karena innerVar tidak dapat diakses di luar fungsi dalam
+
+  // namun fungsi outerFunction tidak bisa mengakses variabel innerVar, innerLet karena innerVar dan innerLet hanya dapat diakses di dalam fungsi innerFunction
+
+  // Akses variabel dari fungsi dalam
+  // console.log(innerVar); //output: error tidak terdefinisi
+  // console.log(innerLet); //output: error tidak terdefinisi
+  // Akan menghasilkan error karena innerVar dan innerLet tidak dapat diakses di luar fungsi dalam
 }
+
 outerFunction(); // Memanggil fungsi luar
