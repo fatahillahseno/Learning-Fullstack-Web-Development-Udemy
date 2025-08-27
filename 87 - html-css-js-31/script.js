@@ -1,63 +1,50 @@
-let numbers = [1, 2, 3];
-let moreNumbers = [4, 5, 6];
+let car = {
+  brand: "BMW",
+  model: "7 Series",
+  color: "White",
+  year: 2024,
+};
 
-// spread operator
-// mengabungkan semua array dengan ... dan koma
-// array yang dicopy/digabungkan akan memakai memori baru
-// tidak sama dengan memori yang dipakai oleh array yang direferensikan
+//menyalin semua properti(key dan value)
+// object baru hanya menyalin tidak mereferensikan object asal
+// jika ingin mengubah suatu value pada objek, tambahkan saja setelah penggunaan spread operator diikuti tanda koma
+// {...objectAwal, key: valueYangBerubah}
+let updatedCar = { ...car, color: "Black" };
+console.log(car);
+console.log(updatedCar);
 
-let combined = [...numbers, ...moreNumbers];
-console.log(combined);
-combined[0] = 999;
-console.log(combined);
-console.log(numbers);
+// `````````````````````````````````````````````````````````
 
-let fruits = ["Apple", "Banana", "Orange"];
-let moreFruits = ["Grapes", ...fruits, "Pineapple"];
-console.log(moreFruits);
+let owner = {
+  name: "John",
+  age: 30,
+};
 
-// berbeda jika dengan nested array
-let nestedArray = [
-  [1, 2],
-  [3, 4],
-];
+// kombinasi dua object menjadi satu object baru
+// tulis spread operator diikuti semua object, pisahkan dengan tanda koma
+// {...object1, ...object2}
+// object baru dengn data owner dan car
+let carWithOwner = { ...car, ...owner };
+console.log(carWithOwner);
+// test for in di objek
+// for (key in carWithOwner) {
+//   console.log(`${key} : ${carWithOwner[key]}`);
+// }
 
-let copiedArray = [...nestedArray]; //hanya shallow copy yang terjadi
+// membuat object lagi menjadi nested object
+// cukup dengan spread operator object asli diikuti dengan koma
+// lalu buat sebuah key baru, pada nilai value isikan dengan spread operator object yang ingin dijadikan nested object
+let nestedOwner = { ...car, owner: { ...owner } };
+console.log(nestedOwner);
 
-console.log(`Original Nested Array: ${nestedArray}`);
+// ada properti yang diupdate namun berada di object baru
+// kita ingin mengupdate properti di object lama
+// caranya masih sama masukan spread operator diikut object yang disalan, pisahkan kedua tersebut dengan koma
+// object yang terakhir ditambahkan akan menimpa properti yang sama pada object baru yang akan dibuat
+let updateCar = {
+  year: 2025,
+  color: "red",
+};
+let finalCar = { ...car, ...updateCar };
 
-copiedArray[1][1] = 8;
-console.log(
-  `Dilakukan pengubahan row 1 col 1\npada original nested array\ncopiedArray[1][1] = 8;`
-);
-console.log(
-  `Shallow Copy, Copied Array: ${copiedArray}\nKetika 4 diganti ke 8 di copied array`
-);
-
-console.log(
-  `Otomatis di original nested Array juga berubah\nOriginal Nested Array: ${nestedArray}`
-);
-
-// lalu bagaimana kita bisa melakukan deep copy
-// kita bisa menggunakan loop
-// selalu pikirkan terlebih dahulu ketika melakukan deep copying
-
-let deepCopyArray = [];
-for (array of nestedArray) {
-  deepCopyArray.push([...array]);
-}
-console.log(`Cara untuk melakukan deep copy
-\n// inisialisasi array kosong
-let deepCopyArray = [];\n
-// assign nilai yang ada di orginal
-for (array of nestedArray) {  
-deepCopyArray.push([...array]);
-}`);
-
-console.log(`\nOriginal Nested Array: ${nestedArray}`);
-console.log(`Deep Copy Array : ${deepCopyArray}`);
-deepCopyArray.push([65, 77]);
-console.log(
-  `\nKetika kita membuat deep copy\nditambahkan atau diubah tidak akan berubah, deepCopyArray.push([65, 77]);\n\nDeep Copy Array : ${deepCopyArray}`
-);
-console.log(`Original Nested Array: ${nestedArray}`);
+console.log(finalCar);
