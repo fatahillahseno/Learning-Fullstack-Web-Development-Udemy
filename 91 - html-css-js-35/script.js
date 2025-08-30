@@ -7,10 +7,13 @@ const car = {
 };
 
 // Menggunakan nama properti yang sama
-const { brand, model, year } = car;
+let { brand, model, year } = car;
 console.log(brand); // Output: BMW
 console.log(model); // Output: 7 Series
 console.log(year); // Output: 2024
+brand = "Audi";
+console.log(brand);
+console.log(car);
 
 // Mengganti nama variabel
 const { brand: carBrand, model: carModel, color: carColor } = car;
@@ -33,3 +36,32 @@ const { color = "Black", year: carYear = 2024 } = car1;
 
 console.log(color); // Output: Black
 console.log(carYear); // Output: 2024
+
+// destructuring nested object
+const carWithOwner = {
+  brand: "BMW",
+  model: "7 Series",
+  color: "Red",
+  owner: {
+    name: "Seno",
+    age: 27,
+  },
+};
+
+const {
+  owner: { name: carOwner, age },
+} = carWithOwner;
+
+console.log(carOwner);
+
+// rest parameter pada object
+// mengambil semua nilai pada object
+const { owner, ...carDetails } = carWithOwner;
+
+console.log(owner);
+console.log(carDetails);
+
+owner.name = "Satria";
+console.log(owner);
+console.log(carWithOwner);
+// js tidak membuat object baru, hanya mereferensikan object yang awal
