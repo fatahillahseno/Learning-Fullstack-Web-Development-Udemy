@@ -1,0 +1,14 @@
+Apa itu innerHTML?
+innerHTML adalah properti JavaScript yang memungkinkan Anda mengubah konten HTML di dalam sebuah elemen. Perubahannya akan memengaruhi struktur dokumen HTML yang sebenarnya.
+
+Risiko Keamanan innerHTML
+Jika Anda memasukkan data dari pengguna ke dalam innerHTML tanpa validasi, ini bisa menyebabkan kerentanan Cross-Site Scripting (XSS). Penyerang dapat menyuntikkan kode berbahaya (seperti JavaScript) yang akan dieksekusi oleh browser pengguna lain.
+
+Contoh Serangan
+kode <img src="invalid-image.jpg" onError='alert("Hacked)'/>' dapat memicu serangan XSS. Ketika gambar gagal dimuat, fungsi onError akan memunculkan alert atau menjalankan skrip berbahaya lainnya.
+
+Solusi dan Cara Aman
+
+Gunakan textContent: Jika Anda hanya ingin memasukkan teks, gunakan textContent yang jauh lebih aman karena tidak akan menginterpretasikan tag HTML.
+
+Validasi & Sanitasi: Jika terpaksa menggunakan innerHTML, selalu bersihkan (sanitize) data dari pengguna di sisi server atau gunakan pustaka (library) khusus seperti DOMPurify untuk membersihkan input di sisi klien.
