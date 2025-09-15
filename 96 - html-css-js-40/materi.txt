@@ -1,0 +1,31 @@
+DOM (Document Object Model) adalah antarmuka pemrograman untuk dokumen HTML, XML, dan SVG. 💻 Ia bekerja sebagai sebuah jembatan antara bahasa pemrograman seperti JavaScript dengan struktur dokumen web.
+
+DOM memiliki tiga fungsi utama:
+
+Mendefinisikan Struktur: Ia mempresentasikan halaman web sebagai sebuah pohon hierarki objek, di mana setiap node (simpul) adalah bagian dari dokumen (seperti elemen, atribut, atau teks).
+
+Mengakses Dokumen: DOM menyediakan metode yang memungkinkan pengembang untuk menemukan atau "menargetkan" elemen-elemen spesifik dalam struktur dokumen.
+
+Memanipulasi dan Memodifikasi Dokumen: Setelah sebuah elemen ditemukan, DOM memungkinkan kita untuk memodifikasi konten, atribut, atau bahkan gaya elemen tersebut.
+
+Kemampuan Utama DOM
+DOM memungkinkan interaksi dinamis pada halaman web. Berikut adalah hal-hal penting yang bisa dilakukan DOM:
+
+Mengenali dan Menargetkan Elemen: Ini adalah langkah pertama untuk berinteraksi dengan halaman. Anda bisa menggunakan metode seperti getElementById(), querySelector(), atau querySelectorAll() untuk memilih elemen-elemen tertentu yang akan dimanipulasi.
+
+Memodifikasi Konten dan Atribut: DOM memungkinkan Anda untuk mengubah, menambah, atau menghapus konten (textContent, innerHTML) serta atribut (setAttribute()) pada elemen yang sudah ada.
+
+Menjelajah Hierarki: Anda dapat bergerak melintasi "pohon" DOM untuk berinteraksi dengan elemen-elemen yang memiliki hubungan struktural, seperti berpindah ke elemen induk (parentNode) atau elemen saudara (nextElementSibling).
+
+Menyertakan Event Listener: Ini adalah kunci untuk membuat halaman web menjadi interaktif. Dengan addEventListener(), Anda dapat "mendengarkan" event tertentu (misalnya, klik mouse, penekanan tombol) pada sebuah elemen dan memicu aksi atau fungsi yang sesuai.
+
+Sub-Bab untuk Belajar DOM
+Untuk menguasai DOM, Anda bisa mempelajari sub-bab berikut secara terstruktur:
+
+Dasar-Dasar DOM: Pelajari konsep pohon DOM dan metode dasar untuk memilih, memanipulasi konten, atribut, dan gaya elemen.
+
+Navigasi dan Hubungan Elemen: Pahami cara bergerak di antara elemen-elemen menggunakan properti seperti parentNode, children, dan nextElementSibling.
+
+Event Handling: Ini adalah bagian terpenting untuk interaktivitas. Pelajari cara menambahkan event listeners dan jenis-jenis event yang umum digunakan.
+
+Manipulasi Lanjutan: Belajar cara membuat dan menghapus elemen baru, serta memahami konsep lanjutan seperti Event Propagation dan Virtual DOM.
