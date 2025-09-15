@@ -1,0 +1,9 @@
+getAtribute() dan setAtribute()
+
+getAtribute() digunakan untuk mengambil nilai atribut pada suatu elemen yang dipilih
+
+format getAtribute('namaAtributYangDiambil')
+
+setAtribute() digunakan untuk mengubah nilai atribut pada suatu elemen yang dipilih
+
+format setAtribute('namaAtributYangDiubah', 'valueYangBaru')
