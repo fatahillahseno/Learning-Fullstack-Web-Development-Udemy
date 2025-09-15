@@ -1,0 +1,15 @@
+querySelector() dan querySelectorAll()
+
+Mengizinkan untuk memilih element pada DOM menggunakan CSS Selector
+
+Perbedaan querySelector() dengan querySelectorAll()
+querySelector() akan memilih elemen pertama yang ditemukan
+sedangkan querySelectorAll() akan memilih seluruh elemen yang dicari
+
+Ketika kita menggunakan querySelector dan querySelectorAll
+akan mengembalikan sebuah array NodeList
+NodeList bisa juga diiterasikan ketika diakses value arraynya
+
+Lalu apakah yang membedakan dengan HTML Collection dengan NodeList itu berisikan daftar simpul (list of nodes)
+HTML Collection itu berisikan daftar element (list of elements)
+
