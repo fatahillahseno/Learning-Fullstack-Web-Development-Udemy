@@ -1,0 +1,13 @@
+childNodes dan children
+
+sama menghasilkan output berupa 
+apa saja child yang ada di dalam suatu parent node
+
+Namnun ada satu perbedaan yang sangat mencolok,yaitu:
+childNodes akan mengembalikan apapun child node 
+yang berada di dalam parent node
+baik itu comment, text, dan element
+keluaran tersebut berupa nodeList
+
+sedangkan children hanya akan mengembalikan element saja
+keluaran tersebut berupa HTML collection

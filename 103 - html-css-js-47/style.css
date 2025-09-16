@@ -1,0 +1,11 @@
+.container {
+  background-color: lightgray;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.child {
+  background-color: lightblue;
+  padding: 10px;
+  margin: 5px 0px;
+}
