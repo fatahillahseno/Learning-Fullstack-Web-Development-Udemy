@@ -1,0 +1,16 @@
+Traverse(Jelajah) DOM Node
+
+Taverse pada DOM, bisa pada:
+1. parent
+   Tiap node dalam dokumen memiliki induk(parent) dalam satu dokumen
+   (parentNode & parentElement, etc.)
+
+2. child
+   Tiap parent dapat memiliki node anak (child) satu atau lebih
+   (children,childNodes, firstChild, lastChild,firstElementChild, lastElementChild, etc.)
+
+3. sibling
+   Node yang memiliki induk yang sama
+   (previousSibling & nextSibling, previousElementSibling & nextElementSibling, etc.)
+
+
