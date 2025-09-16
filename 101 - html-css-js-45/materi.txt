@@ -1,0 +1,22 @@
+DOM Node
+
+kita bisa mengingat kembali bahwa DOM adalah document object model
+yang bisa kita lihat sebagai unit dasar suatu web
+
+pada DOM terdapat node node yang dibuat 
+seperti:
+1. node element yang berisikan tag tag HTML
+contoh:  <p>, <img>, etc.
+2. node teks yang berisikan tulisan/teks pada suatu element node, seperti "Hello World" pada element node <p>
+contoh: <p>Hello World</p>
+3. node atribut yang berisikan atribut properti pada suatu elemen, seperti class="fotoProfil"
+
+Node digunakan sebagai peta untuk bergerak dan memodifikasi halaman web, apa saja itu caranya:
+1. Menemukan Node
+kita bisa menggunakan getElementById, atau querySelector, juga getElementByClassName
+
+2. Menjelajahi Node
+kita bisa mengecek siapa orang tua dari node yang kita pilih (parentNode),atau anak-anaknya (childNodes), maupun saudara (nextSibling), etc.
+
+3. Memanipulasi Node
+kita bisa membuat node baru pada dokumen menggunakan(createElement), menambahkan node baru (appendChild), menghapus node yang ada (removeChild), atau mengubah isi dari konten teksnya (innerHTML atau textContent)
