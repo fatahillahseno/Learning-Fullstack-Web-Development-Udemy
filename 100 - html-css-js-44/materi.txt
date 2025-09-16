@@ -1,0 +1,15 @@
+Manipulasi DOM pada kelas css menggunakan style
+sama seperti memberikan atribut pada suatu query selector pada file css
+menggunakan manipulasi DOM kita dapat melakukannya jga
+
+menggunakan style adalah cara mengubah suatu gaya pada web 
+dengan mengubahnya secara langsung pada inline suatu elemen html
+
+ada cara lainnya menggunakan properti classList
+perbedaan dengan style yaitu classList memisahkan antara 
+struktur (HTML), gaya (CSS), dan perilaku (JS)
+
+beberapa method yang sering dipakai seperti
+1. add, menambahkan kelas pada suatu elemen
+2. remove, menghapus kelas pada suatu elemen
+3. toggle, menambahkan kelas jika belum ada, jika sudah ada akan menghapusnya.
