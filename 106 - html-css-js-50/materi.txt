@@ -10,19 +10,19 @@ Sederhananya, Event Listener adalah pendengar, sedangkan Event Handler adalah ak
 Cara Menambahkan Event Handler
 Ada tiga cara utama untuk menambahkan Event Handler ke elemen DOM:
 
-Inline Event Handler: Metode paling lama dan tidak disarankan, di mana kode JavaScript ditulis langsung di dalam atribut HTML.
+1. Inline Event Handler: Metode paling lama dan tidak disarankan, di mana kode JavaScript ditulis langsung di dalam atribut HTML.
 
 Contoh: <button onclick="myFunction()">Klik</button>
 
 Kekurangan: Mencampur kode HTML dan JavaScript, yang membuat pemeliharaan sulit.
 
-On-Event Property: Menetapkan fungsi langsung ke properti event pada elemen di JavaScript.
+2. On-Event Property: Menetapkan fungsi langsung ke properti event pada elemen di JavaScript.
 
 Contoh: elemen.onclick = myFunction;
 
 Kekurangan: Hanya bisa menampung satu fungsi untuk satu event. Jika Anda menetapkan fungsi lain, fungsi sebelumnya akan tertimpa.
 
-addEventListener(): Cara paling modern dan fleksibel, di mana Anda menggunakan metode addEventListener() pada elemen untuk "mendengarkan" event dan menetapkan fungsi handler-nya.
+3. addEventListener(): Cara paling modern dan fleksibel, di mana Anda menggunakan metode addEventListener() pada elemen untuk "mendengarkan" event dan menetapkan fungsi handler-nya.
 
 Contoh: elemen.addEventListener('click', myFunction);
 
@@ -31,14 +31,14 @@ Kelebihan: Ini adalah standar industri karena memungkinkan Anda menambahkan bany
 Event Populer pada DOM
 Beberapa event yang sering digunakan dalam pengembangan web modern antara lain:
 
-click: Terjadi saat elemen diklik.
+1. click: Terjadi saat elemen diklik.
 
-scroll: Terjadi saat pengguna menggulir halaman.
+2. scroll: Terjadi saat pengguna menggulir halaman.
 
-input: Terjadi saat nilai input berubah.
+3. input: Terjadi saat nilai input berubah.
 
-submit: Terjadi saat sebuah formulir dikirim.
+4. submit: Terjadi saat sebuah formulir dikirim.
 
-load: Terjadi saat seluruh sumber daya halaman (termasuk gambar dan skrip) selesai dimuat.
+5. load: Terjadi saat seluruh sumber daya halaman (termasuk gambar dan skrip) selesai dimuat.
 
-DOMContentLoaded: Terjadi saat struktur DOM selesai dimuat dan diuraikan, tanpa menunggu sumber daya seperti gambar dan stylesheet.
+6. DOMContentLoaded: Terjadi saat struktur DOM selesai dimuat dan diuraikan, tanpa menunggu sumber daya seperti gambar dan stylesheet.
