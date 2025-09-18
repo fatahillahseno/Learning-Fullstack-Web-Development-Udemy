@@ -1,0 +1,20 @@
+DOM Event adalah peristiwa yang terjadi pada dokumen yang menghasilkan sinyal aktivitas yang terjadi.
+peristiwa yang terjadi dapat dilihat atau dalam javascript
+menggunakan sebuah eventListener yang di dalamnya ada eventHandler
+
+Lalu apa itu eventListener?
+eventListener adalah pendengar sinyal yang terjadi pada suatu DOM. sinyal ini berupa aktivitas user pada web.
+Misal seperti click pada button, hover pada salah home page.
+
+eventListener menangkap semua aktivitas berupa sinyal itu dan memberikan suatu callback function yaitu eventHandler.
+
+Jika eventListener adalah fungsi pendengar apa yang terjadi pada DOM.
+Maka eventHandler adalah fungsi yang akan terjadi jika event/peristiwa itu terjadi
+
+Beberapa frequently event pada dom:
+1. click
+2. scroll
+3. DOMContentLoad
+4. load
+5. input
+6. submit
