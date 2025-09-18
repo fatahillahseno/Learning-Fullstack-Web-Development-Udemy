@@ -1,0 +1,19 @@
+Event Object adalah parameter yang otomatis diberikan ke fungsi callback dalam event handler (misalnya, addEventListener). 
+
+Objek ini menyimpan semua informasi penting tentang event yang baru saja terjadi.
+
+Berikut adalah properti-properti utama dari Event Object:
+
+1. event.type: Memberitahu tipe event yang terjadi, seperti "click", "mouseover", atau "keydown".
+
+2. event.target: Merupakan elemen paling spesifik yang pertama kali memicu event. Misalnya, jika Anda mengklik teks di dalam tombol, target adalah elemen <p> atau <span> dari teks itu.
+
+3. event.currentTarget: Merupakan elemen di mana event listener (fungsi addEventListener) dipasang. Ini berbeda dari target, terutama saat terjadi event bubbling. Event berada terpasang pada sebuah div yang di dalamnya ada button. Maka currentTarget-nya adalah div (karena event dipasang pada div), sedangkan target-nya adalah button.
+
+4. event.target.tagName: Memberikan nama tag HTML dari elemen target dalam huruf kapital, misalnya DIV, BUTTON, atau A.
+
+5. event.currentTarget.tagName: Memberikan nama tag HTML dari elemen currentTarget.
+
+6. event.timeStamp: Memberitahu waktu event terjadi dalam milidetik, dihitung sejak halaman dimuat.
+
+7. event.clientX dan event.clientY: Memberikan koordinat horizontal (X) dan vertikal (Y) dari posisi kursor, relatif terhadap viewport (area layar), saat event terjadi
