@@ -1,8 +1,22 @@
-let divElement = document.getElementById("sample-element");
-console.log(divElement);
-console.log(divElement.nodeName);
-console.log(divElement.nodeType);
+function handleInlineClick() {
+  alert("Inline Handler");
+}
 
-let textNode = divElement.firstChild;
-console.log(textNode.nodeName);
-console.log(textNode.nodeType);
+document.getElementById("onEventButton").onclick = function () {
+  alert("On-Event Handler");
+};
+document.getElementById("onEventButton").onclick = function () {
+  alert("Second On-Event Handler");
+};
+
+document
+  .getElementById("addEventListenerButton")
+  .addEventListener("click", () => {
+    alert("addEventListener Handler");
+  });
+
+document
+  .getElementById("addEventListenerButton")
+  .addEventListener("click", () => {
+    console.log("Second addEventListener Handler");
+  });

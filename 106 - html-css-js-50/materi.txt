@@ -1,20 +1,44 @@
-DOM Event adalah peristiwa yang terjadi pada dokumen yang menghasilkan sinyal aktivitas yang terjadi.
-peristiwa yang terjadi dapat dilihat atau dalam javascript
-menggunakan sebuah eventListener yang di dalamnya ada eventHandler
+DOM Event adalah sinyal dari peramban (browser) yang menandakan adanya aktivitas atau perubahan pada dokumen HTML. Aktivitas ini bisa berasal dari interaksi pengguna (misalnya klik, scroll, atau ketikan) atau dari status peramban itu sendiri (seperti halaman selesai dimuat). Event ini berfungsi sebagai pemicu yang memungkinkan JavaScript untuk bereaksi secara dinamis.
 
-Lalu apa itu eventListener?
-eventListener adalah pendengar sinyal yang terjadi pada suatu DOM. sinyal ini berupa aktivitas user pada web.
-Misal seperti click pada button, hover pada salah home page.
+Hubungan Antara Event Listener dan Event Handler
+Event Listener adalah sebuah metode (misalnya addEventListener()) yang tugasnya "mendengarkan" atau menunggu event tertentu terjadi pada sebuah elemen DOM.
 
-eventListener menangkap semua aktivitas berupa sinyal itu dan memberikan suatu callback function yaitu eventHandler.
+Event Handler adalah fungsi callback yang akan dieksekusi oleh Event Listener begitu event yang ditunggu terpicu.
 
-Jika eventListener adalah fungsi pendengar apa yang terjadi pada DOM.
-Maka eventHandler adalah fungsi yang akan terjadi jika event/peristiwa itu terjadi
+Sederhananya, Event Listener adalah pendengar, sedangkan Event Handler adalah aksi yang akan dilakukan
 
-Beberapa frequently event pada dom:
-1. click
-2. scroll
-3. DOMContentLoad
-4. load
-5. input
-6. submit
+Cara Menambahkan Event Handler
+Ada tiga cara utama untuk menambahkan Event Handler ke elemen DOM:
+
+Inline Event Handler: Metode paling lama dan tidak disarankan, di mana kode JavaScript ditulis langsung di dalam atribut HTML.
+
+Contoh: <button onclick="myFunction()">Klik</button>
+
+Kekurangan: Mencampur kode HTML dan JavaScript, yang membuat pemeliharaan sulit.
+
+On-Event Property: Menetapkan fungsi langsung ke properti event pada elemen di JavaScript.
+
+Contoh: elemen.onclick = myFunction;
+
+Kekurangan: Hanya bisa menampung satu fungsi untuk satu event. Jika Anda menetapkan fungsi lain, fungsi sebelumnya akan tertimpa.
+
+addEventListener(): Cara paling modern dan fleksibel, di mana Anda menggunakan metode addEventListener() pada elemen untuk "mendengarkan" event dan menetapkan fungsi handler-nya.
+
+Contoh: elemen.addEventListener('click', myFunction);
+
+Kelebihan: Ini adalah standar industri karena memungkinkan Anda menambahkan banyak Event Handler ke satu event pada satu elemen tanpa saling menimpa.
+
+Event Populer pada DOM
+Beberapa event yang sering digunakan dalam pengembangan web modern antara lain:
+
+click: Terjadi saat elemen diklik.
+
+scroll: Terjadi saat pengguna menggulir halaman.
+
+input: Terjadi saat nilai input berubah.
+
+submit: Terjadi saat sebuah formulir dikirim.
+
+load: Terjadi saat seluruh sumber daya halaman (termasuk gambar dan skrip) selesai dimuat.
+
+DOMContentLoaded: Terjadi saat struktur DOM selesai dimuat dan diuraikan, tanpa menunggu sumber daya seperti gambar dan stylesheet.
