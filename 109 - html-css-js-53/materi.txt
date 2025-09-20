@@ -1,0 +1,6 @@
+Mouse Event
+1. mouseover => event terpicu ketika pointer berada pada elemen yang dipilih
+2. mousedown => event terpicu ketika pointer mouse ditekan pada elemen yang dipilih
+3. mouseup => event terpicu ketika pointer mouse tertekan akan dilepas pada elemen yang dipilih
+4. mouseout => event terpicu ketika pointer mouse keluar dari area elemen yang dipilih 
+5. click => event terpicu ketika pointer mouse ditekan dan dilepaskan secara bersamaan/ terklik pada elemen yang dipilih 
