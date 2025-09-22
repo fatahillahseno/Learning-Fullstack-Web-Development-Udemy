@@ -1,0 +1,6 @@
+Window Event
+
+1. load, event akan terpicu ketika seluruh halaman sudah termuat(load)
+2. resize, event akan terpicu ketika window browser diubah ukurannya
+3. scroll, event akan terpicu ketika scroll digerakkan
+4. beforeunload, event akan terpicu ketika tab pada browser ditutup atau user meninggalkan halaman
