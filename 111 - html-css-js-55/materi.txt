@@ -1,0 +1,7 @@
+Form Event
+
+1. submit, event terpicu ketika button bertipe submit atau key Enter ditekan
+2. input, event terpicu ketika key ditekan pada input field
+3. change, event terpicu ketika keluar dari input field setelah memasukkan input-an
+4. focus, event terpicu ketika masuk ke dalam sebuah elemen input
+5. blur, event terpicu ketika keluar ke dalam sebuah elemen input
