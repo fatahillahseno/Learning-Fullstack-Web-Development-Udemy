@@ -1,0 +1,31 @@
+Event Propagation adalah cara kerja event dalam DOM (Document Object Model)
+yang menentukan urutan di mana event akan ditangani ketika terjadi pada elemen yang bersarang (nested elements). 
+
+Ada dua fase utama dalam event propagation: capturing phase dan bubbling phase.
+
+1. Capturing Phase: Pada fase ini, event mulai dari elemen paling luar (root) dan bergerak ke elemen target.
+Namun, dalam praktiknya, fase ini jarang digunakan karena sebagian besar event listener ditetapkan untuk fase bubbling.
+
+2. Bubbling Phase: Pada fase ini, event mulai dari elemen target dan naik ke elemen paling luar (root). Ini adalah fase yang paling umum digunakan dalam penanganan event di JavaScript.
+Secara default, event listener di JavaScript menangani event pada fase bubbling. 
+
+Namun, kita dapat menentukan apakah kita ingin menangani event pada fase capturing dengan menambahkan argumen ketiga pada metode addEventListener.
+
+Penggambaran Hirarki Dokumen
+<document> - <html> - <body> - <div>Outer Container<div> - <div>Middle Container<div> - <div>Inner Container<div> 
+
+Dalam urutan stage nya terdapat 3 stage:
+
+Stage 1 - Event Capture Phase
+Traverse dari root (<document>) ke element (<elemen>) yang memiliki event tersebut
+
+Stage 2 - Event Start / Target Phase
+Event mulai di inner container
+
+Stage 3 - Event Bubbling Phase
+Traverse dari elemen yang memiliki event (<elemen>) menuju ke root (<document>)
+
+Property pada event untuk mengetahui phase yang sedang terjadi pada event yang berlangsung pada DOM adalah eventPhase.
+
+use case event propagation:
+Penggunaan mekanisme event propagation untuk event delegation dimana event pada elemen child akan dikumpulkan pada element parent, sehingga tidak perlu membuat banyak event listener tiap elemen child baru yang dibuat
