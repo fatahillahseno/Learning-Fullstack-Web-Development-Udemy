@@ -1,0 +1,10 @@
+Event delegation adalah penerapan logika dengan hanya menambahkan satu event listener pada suatu elemen induk yang memiliki banyak event yang dilakukan oleh anak elemen
+
+Event delegation merupakan penggunaan dari dua phase pada event propagation yaitu capturing atau bubbling.
+
+biasa menggunakan method target (merujuk pada elemen yang diklik) dan currentTarget (merujuk langsung pada elemen yang dipasang event listener).
+
+Keuntungan menggunakan event delegation:
+1. pengurangan penggunaan memori 
+2. kode yang bersih
+3. tidak perlu menambahkan event listener pada elemen anak satu per satu
