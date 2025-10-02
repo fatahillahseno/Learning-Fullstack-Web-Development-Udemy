@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.faq-header {
+  background-color: #f7f7f7;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.faq-header:hover {
+  background-color: #eee;
+}
+
+.faq-header h3 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+  font-size: 0.8em;
+}
+
+/* --- Kunci CSS: Status Tersembunyi (Default) --- */
+
+.faq-content {
+  /* Menggunakan max-height dan opacity untuk transisi yang halus */
+  max-height: 0;
+  padding: 0 15px;
+  opacity: 0;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out,
+    opacity 0.3s ease-out;
+  background-color: #ffffff;
+}
+
+.faq-content p {
+  margin: 0;
+}
+
+/* --- Kunci CSS: Status Terbuka (Kelas yang di-toggle JS) --- */
+
+/* 1. Konten Terbuka */
+.faq-content.expanded {
+  max-height: 200px; /* Nilai harus cukup besar dari tinggi konten */
+  padding: 15px;
+  opacity: 1;
+  border-top: 1px solid #ddd;
+}
+
+/* 2. Header Aktif (Untuk styling visual dan Ikon) */
+.faq-header.active {
+  background-color: #e0f7fa; /* Warna latar belakang header saat aktif */
+}
+
+/* 3. Memutar Ikon saat Header aktif */
+.faq-header.active .icon {
+  transform: rotate(180deg);
+}

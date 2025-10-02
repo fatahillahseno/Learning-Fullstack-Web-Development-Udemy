@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Event JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="serviceOptions" class="radioGroup">
+      <!-- Opsi 1 -->
+      <input
+        type="radio"
+        name="service"
+        id="opt_standard"
+        value="standard"
+        checked />
+      <label for="opt_standard" class="custom-radio-card"
+        >Layanan Standar</label
+      >
+      <div class="card-detail expanded">
+        <p>Detail: Pilihan default. Pengiriman 5-7 hari kerja.</p>
+      </div>
+
+      <!-- Opsi 2 -->
+      <input type="radio" name="service" id="opt_express" value="express" />
+      <label for="opt_express" class="custom-radio-card">Layanan Ekspres</label>
+      <div class="card-detail">
+        <p>Detail: Prioritas Tinggi. Pengiriman 1-2 hari kerja.</p>
+      </div>
+
+      <!-- Opsi 3 -->
+      <input type="radio" name="service" id="opt_premium" value="premium" />
+      <label for="opt_premium" class="custom-radio-card">Layanan Premium</label>
+      <div class="card-detail">
+        <p>Detail: Pengiriman kilat dan layanan pelanggan 24 jam.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, Sans-Serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f7f6;
+}
+
+/* Style Wadah Radio Button */
+#serviceOptions {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 15px 0px 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* menyembunyikan tombol input radio asli */
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+/* styling kartu label */
+.custom-radio-card {
+  display: block;
+  padding: 15px 20px;
+  margin-bottom: 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: all 0.5s ease-in-out;
+}
+/* style label di-hover */
+.custom-radio-card:hover {
+  background-color: #eee;
+}
+
+/* Style Kartu Dipilih */
+.custom-radio-card.selected {
+  background-color: #f0f8ff; /* Warna latar biru muda (opsional) */
+  border-color: #007bff; /* Batas biru yang lebih netral */
+  color: #007bff; /* Teks biru (opsional) */
+  font-weight: bold;
+}
+
+/* style detail kartu ketika di-toggle*/
+.card-detail {
+  max-height: 0;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  opacity: 0;
+  overflow: hidden;
+  background-color: #f0f8ff;
+  border-left: 5px solid #007bff;
+  transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out,
+    padding 0.5s ease-in-out;
+}
+.card-detail.expanded {
+  max-height: 500px;
+  padding: 10px 20px;
+  opacity: 1;
+}
+.card-detail p {
+  margin: 10px 0;
+  font-size: 0.9em;
+}

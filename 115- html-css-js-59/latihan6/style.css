@@ -1,0 +1,79 @@
+body {
+  /* 1. Membuat Halaman Terpusat (Self-Centered) */
+  display: flex;
+  flex-direction: column; /* Mengatur konten secara vertikal */
+  align-items: center; /* Memusatkan horizontal */
+  justify-content: center; /* Memusatkan vertikal */
+  min-height: 100vh; /* Memastikan body mengisi seluruh tinggi viewport */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+}
+
+/* Styling untuk Form/Kontainer Pilihan */
+#quizForm {
+  width: 90%; /* Mengatur lebar maksimum form */
+  max-width: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Memastikan elemen di dalamnya (misalnya tombol) ikut terpusat */
+}
+
+/* Kontainer untuk Pilihan Radio */
+.radio-group {
+  margin: 20px 0;
+}
+
+/* 2. Menyembunyikan Input Radio Asli */
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  /* Penting: Jaga agar input tetap ada di DOM untuk aksesibilitas */
+}
+
+/* 3. Styling Kotak Pilihan (Label) - UI Interaktif */
+.custom-radio-card {
+  display: block;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  text-align: left; /* Teks di dalam card kembali ke rata kiri */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efek Hover */
+.custom-radio-card:hover {
+  background-color: #e8f0fe; /* Warna hover yang halus */
+  border-color: #4285f4;
+}
+
+/* 4. Efek 'Checked' (Highlight Interaktif) */
+/* Ketika input radio di-check, targetkan label yang mengikutinya */
+input[type="radio"]:checked + .custom-radio-card {
+  background-color: #d1e7dd; /* Latar belakang aktif (hijau muda) */
+  border-color: #0f5132; /* Border aktif (hijau tua) */
+  color: #0f5132;
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(15, 81, 50, 0.3); /* Bayangan lembut saat terpilih */
+}
+
+/* Styling Tombol Submit */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #3367d6;
+}

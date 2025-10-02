@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#hoverBox {
+  width: 250px;
+  height: 150px;
+  background-color: #2196f3; /* Warna awal: Biru */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; /* Untuk animasi transisi yang halus */
+  cursor: pointer;
+}
