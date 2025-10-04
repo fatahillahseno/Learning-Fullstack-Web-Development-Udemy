@@ -1,0 +1,62 @@
+Browser Object Model adalah koleksi objek spesifik untuk berinteraksi dengan jendela browser menggunakan java script.
+Yang bisa diakses bukan isi konten dari page web. Objek utama dari BOM adalah window dengan akses global.
+
+Beberapa properti yang ada di dalam objek window:
+1. screen
+properti yang berisikan tampilan perangkat pengguna yang memberikan berapa besar dimensi layar.
+ada properti lagi dalam screen:
+1.a screen.width            : memberikan lebar total layar dalam px
+1.b screen.height           : memberikan tinggi total layar dalam px
+1.c screen.availWidth       : memberikan lebar yang tersedia untuk jendela browser, diluar taskbar dan fitur sistem
+1.d screen.availHeight      : memberikan tinggi yang tersedia untuk jendela browser, diluar taskbar dan fitur sistem
+1.e screen.colorDepth       : memberikan seberapa besar color depth dalam bits
+1.f screen.pixelDepth       : memberikan seberapa besar pixel depth dalam bits
+
+2. location
+properti yang berisikan URL/alamat web yang dibuka, digunakan untuk mengubah URL
+ada properti dan method dalam location:
+2.a location.href           : memberikan seluruh URL dari halaman saat ini
+2.b location.hostname       : memberikan nama host (domain) dari halaman web
+2.c location.pathname       : memberikan jalur (path) ke halaman web
+2.d location.protocol       : memberikan protokol apa yang digunakan (http/https)
+2.e location.assign()       : memuat dokumen baru                     
+2.f location.reload()       : memuat ulang halaman saat ini
+2.g location.replace()      : memuat URL baru dan menghapus histori saat ini(tidak bisa back ke halaman sebelumnya yang dibuka)
+
+3. history
+properti ini berisikan riwayat browser, yaitu URL yang dikunjungi dalam sesi tab yang dibuka
+ada properti dan method dalam history:
+3.a history.length          : jumlah URL dalam daftar riwayat
+3.b history.back()          : pindah ke URL sebelumnya
+3.c history.forward()       : pindah ke URL selanjutnya
+3.d history.go(number)      : memuat URL dari daftar riwayat berdasarkan posisi relatif dimana 0 berarti reload, -1 berarti back, 1 berarti forward
+
+4. navigator
+properti yang berisikan informasi browser pengguna dan sistem operasi
+ada properti dalam navigator:
+4.a navigator.appName       : menampilkan Netscape pada browser apapun
+4.b navigator.userAgent     : menampilkan string yang mengenali browser apa yang digunakan
+4.c navigator.platform      : menampilkan platform browser (win32/macintel/dsb)
+4.d navigator.cookieEnabled : menampilkan nilai boolean apakah cookie diaktifkan atau tidak
+4.e navigator.language      : menampilkan bahasa yang digunakan browser
+4.f navigator.geolocation   : menampilkan dan mendapatkan lokasi geografis pengguna (dibutuhkan izin dari pengguna)
+
+Kemampuan yang lain dari objek window:
+1. Manipulasi Jendela
+1.a window.open(URL, name. specs)     : membuka jendela atau tab browser baru
+1.b window.close()                    : menutup jendela browser saat ini
+1.c window.resizeTo(width,height)     : mengubah ukuran jendela
+1.d window.moveTo(x,y)                : memindahkan jendela ke koordinat tertentu
+
+2. Interaksi Pengguna Sederhana
+2.a window.alert('pesan')              : menampilkan kotak peringatan berisi pesan dengan tombol OK
+2.b window.confirm('pesan)             : menampilkan kotak dialog pesan dengan tombol OK dan Batalkan, keduanya mengembalikan boolean
+2.c window.prompt('pesan', 'default')  : menampilkan kotak dialog yang meminta input dari pengguna
+
+3. Fungsi Timing
+3.a window.setTimeOut(function, miliseconds)  : menjalankan fungsi sekali setelah penundaan waktu
+3.b window.setInterval(function, miliseconds) : menjalankan fungsi secara berulang setelah interval waktu tertentu
+3.c window.clearTimeOut()                     : menghentikan eksekusi fungsi yang telah dijadwalkan   
+3.c window.clearInterval()                     : menghentikan eksekusi fungsi yang telah dijadwalkan
+
+Pada intinya BOM (browser object model) berinteraksi dengan browser
