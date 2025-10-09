@@ -1,0 +1,110 @@
+  Module Javascript
+
+  Module adalah potongan kode yang dapat digunakan kembali, 
+  memungkinkan pengembang membagi aplikasi besar menjadi file-file kecil
+  yang terpisah
+
+  Keuntungan menggunakan modul:
+  1. pemeliharaan/maintenance
+  perubahan bisa dilakukan tanpa harus mempengaruhi modul lainnya
+
+  2.Reusability
+  fungsi dan variabel dapat digunakan kembali di berbagai bagian aplikasi
+
+  3. pengelolaan Namespace
+  menghindari pencemaran ruang lingkup dengan membatasi visibilitas variabel dan fungsi
+
+  4. pengelolaan ketergantungan/dependency
+  mengatur ketergantungan/dependency dengan lebih efektiif,
+  memastikan bahwa hanya komponen yang diperlukan yang dimuat
+
+  Penggunaan Module
+  di node.js menggunakan CommonJS
+  di aplikasi sisi klien menggunakan ECMA Script Modules (ESM)
+
+  cara yang mudah ketika ingin menggunakan modul adalahpada tag script di file html
+  harus menggunakan atribut type berisikan "modules"
+
+  lalu ketika ingin memberikan fungsi/variabel yg ada pada suatu file js
+  gunakan keyword export
+
+  dengan keyword import kita bisa menggunakan fungsi/variabel dari file js tersebut
+
+  export dan import terbagi menjadi 2:
+  1. default export & default import
+
+  karakteristik default export & import:
+  a. hanya bisa satu tiap module js
+
+  b. Cara menggunakan default pada export
+    deklarasi "export default" sebelum sesuatu(variabel, const, class, ataupun function).
+    contoh: export default function daftarUser(){..} 
+    deklarasi export default di akhir file.
+    contoh: export default daftarUser;
+
+  c. cara menggunakan default pada import
+    deklarasi import namaSesuatu from 'pathTempatModuleJS'
+    contoh: import daftarUser from './daftarUser.js'
+
+  d. saat import sesuatu bisa namanya diganti
+    karena cuma satu default export tiap satu module js
+    misal pada file asli: daftarUser(){...}
+    saat impor: impor signUp from './daftarUser.js'
+
+  2. named export & named import
+
+  karakteristik named export & import:
+  a. bisa banyak (tak terbatas) tiap module js
+
+  b. Cara menggunakan named pada export
+    deklarasi "export" sebelum sesuatu(variabel, const, class, ataupun function).
+    contoh: export function daftarUser(){..} 
+    deklarasi export di akhir file.
+    contoh: export {daftarUser};
+
+  c. cara menggunakan named pada import
+    - harus menggunakan kurung kurawal { sesuatu }
+    - harus dengan nama yang diekspor
+    deklarasi import namaSesuatu from 'pathTempatModuleJS'
+    contoh: 
+    1.default
+    import {daftarUser} from './daftarUser.js'
+
+  d. saat import sesuatu bisa namanya diganti
+    jika ingin diubah namanya, menggunakan as, contoh: {daftarUser as signUp}
+    misal pada file asli: daftarUser(){...}
+    saat impor: impor {daftarUser as signUp} from './daftarUser.js'
+
+  Beberapa informasi tambahan:
+  1. named exports lebih disukai memungkinkan untuk analisis statis
+    memiliki fitur Tree Shaking. Tool dapat menghapus kode yang telah diekspor tetapi tidak pernah Anda impor atau gunakan. 
+    Ini sangat penting untuk mengurangi ukuran bundle aplikasi Anda.
+
+  2. named import, mengambil semua dari named export dalam satu namespace (satu objek) 
+    contoh : import * as userOperation from './daftarUser.js'
+
+  3. Ekspor Ulang (Re-exporting)
+    konsepnya seperti forward dalam suatu pesan/chat
+    akan ada barrel file yang menyediakan fitur export sebagai jalan dari module js sumber ke module js impor yang akan menggunakan komponennya
+    pada barrel file akan melakukan export dari sumber, dan module impor akan mengimpornya dari barrel file
+    contoh:
+    module js sumber:
+    export nama = 'seno';
+
+    barrel file:index.js
+    export {nama} from './modulJSSumber.js'
+
+    module js impor
+    import {nama} from './index.js'   
+
+  4.Refactoring dan Tooling
+    pada named export dan import, refactoring berlaku ketika kita mengganti nama komponen di file sumber
+    lalu IDE akan otomatis mengganti nama komponen di file impor sesuai nama pada file sumber
+    contoh:
+    file sumber:
+    export const name ="Seno"
+    file impor:
+    import {name} from './user.js'
+
+    ketika const name diganti menjadi const nameUser
+    maka IDE akan mengganti import {name} menjadi import {nameUser}
