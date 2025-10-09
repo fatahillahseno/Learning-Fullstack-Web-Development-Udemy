@@ -1,0 +1,16 @@
+Module Scope
+
+variabel yang dideklarasikan tanpa ada export keyword
+hanya akan bisa diakses di dalam modul/file tersebut.
+
+jika ditambahkan export keyword
+variabel bisa digunakan di module/file lain
+
+variabel yang dideklarasikan secara privat bisa digunakan pada modul/file lain
+jika digunakan di dalam sebuah variabel public
+misal: variabel private angka digunakan pada fungsi yang di export bernama hitung
+angka bisa ditampilkan di file/modul lain melalui fungsi hitung()
+
+globalThis -> keyword untuk mengakses global
+pada DOM itu window, nodeJs itu global, web workers itu self
+
