@@ -1,0 +1,13 @@
+live binding
+
+pada ES6, live binding memungkinkan variabel-variabel
+dapat diakses secara dinamis oleh berbagai modul yang berbeda
+tanpa perlu menginisialisasi ulang nilainya
+
+cara menggunakan sama seperti biasa
+export variabel pada sumber modul
+import variabel di import modul
+secara dinamis variabel tersebut akan diperbarui
+
+penggunaan live binding memudahkan pengelolaan
+dan pemeliharaan kode dalam proyek besar
