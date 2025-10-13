@@ -1,0 +1,23 @@
+JavaScript mengeksekusi kode secara berurutan, dari baris paling atas hingga ke bawah.
+
+Prinsip Penimpaan Nilai (Overwriting): 
+Jika ada variabel atau elemen yang sama dimodifikasi oleh fungsi yang berbeda, 
+fungsi yang dieksekusi paling akhir yang akan menentukan nilai akhirnya
+
+Callback Function adalah fungsi yang kita berikan sebagai argumen (parameter) ke fungsi lain. 
+Fungsi ini tidak dieksekusi saat dideklarasikan, 
+melainkan dipanggil kembali (called back) oleh fungsi penerima di waktu yang tepat.
+
+Callback dalam Konteks Asinkron (Menghindari "Nested")
+Secara historis, callback adalah cara utama untuk mengatur alur asinkron dan, 
+dalam konteks materi Anda, digunakan sebagai upaya untuk meratakan kode:
+
+Tujuan: 
+Untuk memberi tahu program, "Lakukan tugas yang memakan waktu ini dulu, dan ketika selesai, jalankan callback ini."
+
+Masalah Klasik: 
+Ketika banyak operasi asinkron harus berurutan (Operasi B menunggu hasil Operasi A), 
+callback akan bersarang (nested), menciptakan "Callback Hell" (kode sulit dibaca).
+
+Masa Depan:
+masalah Callback Hell ini diatasi dengan menggunakan Promises dan Async/Await, yang memungkinkan kita menulis kode asinkron secara berantai (chaining) dan mudah dibaca, bukan bersarang
