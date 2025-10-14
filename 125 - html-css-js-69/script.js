@@ -10,3 +10,27 @@ async function loadData() {
 }
 
 loadData();
+
+/* 
+old version
+
+function loadData() {
+  fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then((response) => {
+      if (!response.ok) {
+        //jika response.ok tidak ada
+        throw new Error("Network response was not okay");
+      }
+      // jika response.ok ada
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.group(error);
+    });
+}
+
+
+*/
