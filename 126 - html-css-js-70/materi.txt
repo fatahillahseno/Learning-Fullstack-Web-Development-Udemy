@@ -1,0 +1,16 @@
+JSON adalah Java Script Object Notation
+
+terlihat sama seperti tipe data objek pada javascript
+namun memiliki aturan yang ketat, misal:
+1. key pada json harus diapit kutip ganda
+2. value bisa berbagai tipe data (string(harus diapit kutip ganda), number, boolean, object, array, null)
+3. antar pair key:value harus diikuti dengan koma 
+4. pasangan key:value terakhir tidak boleh diakhiri oleh koma(akan mengakibatkan error)
+5. comment tidak bisa dimasukkan ke dalam file json(akan mengakibatkan error)
+
+untuk menggunakan data yang diterima dari server(masih berupa JSON)
+kita bisa menggunakan JSON.parse()
+
+ketika kita mau mengirim datanya kembali ke dalam server, kita harus mengubah data tersebut kembali menjadi JSON
+kita bisa menggunakan JSON.stringify()
+
